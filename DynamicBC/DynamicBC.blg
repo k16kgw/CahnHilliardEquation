@@ -1,0 +1,107 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: DynamicBC.aux
+The style file: jplain.bst
+I found no \bibdata command---while reading file DynamicBC.aux
+Warning--I didn't find a database entry for "GoldsteinMiranvilleSchimperna2011"
+Warning--I didn't find a database entry for "Scarpa2019"
+Warning--I didn't find a database entry for "ColliFukao2015-CH-AC"
+Warning--I didn't find a database entry for "ColliFGS2015"
+Warning--I didn't find a database entry for "ColliGilardiSprekels2014"
+Warning--I didn't find a database entry for "MiranvilleZelik2009"
+Warning--I didn't find a database entry for "MiranvilleZelik2005"
+Warning--I didn't find a database entry for "RackeZheng2003"
+Warning--I didn't find a database entry for "ColliFukaoWu2020"
+Warning--I didn't find a database entry for "LiuWu2019"
+Warning--I didn't find a database entry for "ColliGilardiSprekels2018"
+Warning--I didn't find a database entry for "ColliFukao2015-GMS"
+Warning--I didn't find a database entry for "GarckeKnopf2018"
+Warning--I didn't find a database entry for "Wu2018"
+Warning--I didn't find a database entry for "KnopfLam2019"
+Warning--I didn't find a database entry for "ColliFukao2014"
+Warning--I didn't find a database entry for "Cahn1961"
+Warning--I didn't find a database entry for "CahnHilliard1958"
+Warning--I didn't find a database entry for "NovickCohen2008"
+Warning--I didn't find a database entry for "FixcherMaassDieterich1997"
+Warning--I didn't find a database entry for "FixcherMaassDieterich1998"
+Warning--I didn't find a database entry for "FischerETAL1998"
+Warning--I didn't find a database entry for "Gurtin1996"
+Warning--I didn't find a database entry for "Aiki1993"
+Warning--I didn't find a database entry for "Aiki1995"
+Warning--I didn't find a database entry for "Aiki1996"
+Warning--I didn't find a database entry for "ColliFukao2015"
+Warning--I didn't find a database entry for "FukaoKenmochi2013"
+Warning--I didn't find a database entry for "KenmochiNiezgodka1996)"
+Warning--I didn't find a database entry for "Kubo2012"
+Warning--I didn't find a database entry for "ColliFS2015"
+Warning--I didn't find a database entry for "ColliGilardiSprekels2016"
+Warning--I didn't find a database entry for "PrussRackeZheng2006"
+Warning--I didn't find a database entry for "MiranvilleZelik2004"
+Warning--I didn't find a database entry for "MiranvilleZelik2008"
+Warning--I didn't find a database entry for "CherfilsMiranvilleZelik2011"
+Warning--I didn't find a database entry for "GilardiMiranvilleSchimperna2009"
+Warning--I didn't find a database entry for "GalGrasselli2008"
+Warning--I didn't find a database entry for "GrasselliSchimpernaSegattiZelik2009"
+Warning--I didn't find a database entry for "CherfilsMiranville2009"
+Warning--I didn't find a database entry for "GilardiMiranvilleSchimperna2010"
+Warning--I didn't find a database entry for "GattiMiranville2006"
+Warning--I didn't find a database entry for "ElliottZheng1986"
+Warning--I didn't find a database entry for "Zheng1986"
+Warning--I didn't find a database entry for "TemamBOOK"
+Warning--I didn't find a database entry for "KenmochiNiezgodkaPawlow1995"
+Warning--I didn't find a database entry for "Escher1993"
+Warning--I didn't find a database entry for "Escher1994"
+Warning--I didn't find a database entry for "Hintermann1989"
+Warning--I didn't find a database entry for "SatoAiki2001"
+Warning--I didn't find a database entry for "ZhengBOOK"
+Warning--I didn't find a database entry for "ChillETAL2006"
+Warning--I didn't find a database entry for "WuZheng2004"
+Warning--I didn't find a database entry for "QinBOOK"
+Warning--I didn't find a database entry for "PodioGuidugli2006"
+Warning--I didn't find a database entry for "FriedGurtin1993"
+Warning--I didn't find a database entry for "ColliGPS2011"
+Warning--I didn't find a database entry for "PodioGuidguli2006"
+Warning--I didn't find a database entry for "ColliGilardiSprekels2017"
+You've used 0 entries,
+            2620 wiz_defined-function locations,
+            709 strings with 6474 characters,
+and the built_in function-call counts, 18 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 7
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 3
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 1
+stack$ -- 0
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 2
+is.kanji.str$ -- 0
+(There was 1 error message)

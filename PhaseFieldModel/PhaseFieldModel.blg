@@ -1,0 +1,52 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: PhaseFieldModel.aux
+The style file: jplain.bst
+Illegal, another \bibstyle command---line 20 of file PhaseFieldModel.aux
+ : \bibstyle
+ :          {jplain}
+I'm skipping whatever remains of this command
+Database file #1: references.bib
+You've used 1 entry,
+            2620 wiz_defined-function locations,
+            601 strings with 4709 characters,
+and the built_in function-call counts, 519 in all, are:
+= -- 49
+> -- 7
+< -- 3
++ -- 3
+- -- 2
+* -- 31
+:= -- 68
+add.period$ -- 3
+call.type$ -- 1
+change.case$ -- 4
+chr.to.int$ -- 0
+cite$ -- 1
+duplicate$ -- 30
+empty$ -- 45
+format.name$ -- 3
+if$ -- 121
+int.to.chr$ -- 0
+int.to.str$ -- 1
+missing$ -- 1
+newline$ -- 8
+num.names$ -- 2
+pop$ -- 5
+preamble$ -- 1
+purify$ -- 3
+quote$ -- 0
+skip$ -- 31
+stack$ -- 0
+substring$ -- 45
+swap$ -- 14
+text.length$ -- 3
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 4
+warning$ -- 0
+while$ -- 5
+width$ -- 2
+write$ -- 13
+is.kanji.str$ -- 10
+(There was 1 error message)
