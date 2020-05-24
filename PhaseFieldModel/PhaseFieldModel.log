@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.euc) (TeX Live 2020) (preloaded format=platex 2020.4.13)  24 MAY 2020 18:34
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.euc) (TeX Live 2020) (preloaded format=platex 2020.4.13)  24 MAY 2020 22:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -607,7 +607,7 @@ File: l3backend-dvips.def 2020-03-12 L3 backend support: dvips
 LaTeX Warning: Unused global option(s):
     [openary].
 
-No file PhaseFieldModel.aux.
+(./PhaseFieldModel.aux)
 \openout1 = `PhaseFieldModel.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -630,6 +630,7 @@ LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
+
 *geometry* driver: auto-detecting
 *geometry* detected driver: dvips
 *geometry* verbose mode - [ preamble ] result:
@@ -678,14 +679,11 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 7.
 LaTeX Info: Redefining \pageref on input line 7.
 LaTeX Info: Redefining \nameref on input line 7.
+ (./PhaseFieldModel.out) (./PhaseFieldModel.out)
 \@outlinefile=\write7
 \openout7 = `PhaseFieldModel.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 16.60605pt on input line 13.
 LaTeX Font Info:    Font shape `JY1/mc/m/n' will be
@@ -734,24 +732,10 @@ LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 14.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 13.83836pt on input line 14.
+ (./PhaseFieldModel.toc)
 \tf@toc=\write8
 \openout8 = `PhaseFieldModel.toc'.
 
-LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 16.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 16.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 16.
-LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <14.4> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 16.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 16.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 13.83836pt on input line 16.
-
-
-LaTeX Warning: Citation `Kim2007' on page 1 undefined on input line 16.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
@@ -759,8 +743,16 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 17.
-No file PhaseFieldModel.bbl.
-[1
+(./PhaseFieldModel.bbl
+LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 6.
+LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 6.
+) [1
 
 ]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 32.
@@ -768,27 +760,17 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 32.
  (./PhaseFieldModel.aux)
 Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 32.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 32.
-
-
-Package rerunfilecheck Warning: File `PhaseFieldModel.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `PhaseFieldModel.out':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  28E12AD9F2F3C20099659EA4A7A50125;68.
-
-LaTeX Warning: There were undefined references.
-
+Package rerunfilecheck Info: File `PhaseFieldModel.out' has not changed.
+(rerunfilecheck)             Checksum: 28E12AD9F2F3C20099659EA4A7A50125;68.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 32.
  ) 
 Here is how much of TeX's memory you used:
- 20254 strings out of 481118
- 355378 string characters out of 5916929
- 644612 words of memory out of 5000000
- 35863 multiletter control sequences out of 15000+600000
- 554981 words of font info for 111 fonts, out of 8000000 for 9000
+ 20266 strings out of 481118
+ 355585 string characters out of 5916929
+ 645756 words of memory out of 5000000
+ 35865 multiletter control sequences out of 15000+600000
+ 554892 words of font info for 111 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 63i,6n,62p,447b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,6n,62p,447b,333s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on PhaseFieldModel.dvi (1 page, 3012 bytes).
+Output written on PhaseFieldModel.dvi (1 page, 3812 bytes).
