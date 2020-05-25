@@ -1,0 +1,59 @@
+\documentclass[openary, a4paper, oneside]{jsarticle}
+
+
+% 自作マクロ
+\input{../mymacro.tex}
+
+\begin{document}
+
+\title{Cahn--Hilliard方程式の数値解析の関連論文}
+\author{香川渓一郎}
+\date{\today}
+\maketitle
+\setcounter{tocdepth}{1}
+\tableofcontents
+
+\section{Cherfils, Laurence, Petcu, Pierre (2010) day:200526}
+    \subsection{論文情報}
+    Cherfils, Laurence, Madalina Petcu, and Morgan Pierre. "A numerical analysis of the Cahn-Hilliard equation with dynamic boundary conditions." Discrete Contin. Dyn. Syst 27.4 (2010): 1511-1533.
+    % 著者名, 論文タイトル, 掲載雑誌, 年, ページ.
+    \subsection{何に関する論文で何を示したのか}
+    動的境界条件下におけるCahn--Hilliard方程式の有限要素空間半離散化を考える．
+    考える問題は次の通り
+    \begin{equation}
+      \begin{aligned}
+      u_{t} &=\Delta w, \quad t>0, x \in \Omega \\
+      w &=f(u)-\Delta u, \quad t>0, x \in \Omega \\
+      \left(1 / \Gamma_{s}\right) u_{t} &=\sigma_{s} \Delta_{\|} u-\lambda_{s} u-g_{s}(u)-\partial_{n} u, \quad t>0, x \in \Gamma \\
+      \partial_{n} w &=0, \quad t>0, x \in \Gamma
+      \end{aligned}
+    \end{equation}
+    内部でCahn--Hilliard方程式を満たし，境界ではAllen--Cahn方程式を満たす．
+    ここに空間領域は2, 3次元の平板とする．即ち
+    \begin{equation}
+      \Omega=\Pi_{i=1}^{d-1}\left(\mathbb{R} /\left(L_{i} \mathbb{Z}\right)\right) \times\left(0, L_{d}\right), \quad L_{i}>0, i=1, \ldots, d, \quad d=2 \text { or } 3.
+    \end{equation}
+    1, 2次元方向には周期境界条件を課す．
+    解に十分な正則性があると仮定して，エネルギーノルムと弱いノルムで最適な誤差評価を示す．
+    解の正則性が低い場合には弱位相で収束することを示す．
+    また時間離散化のための後方オイラースキームに基づく完全離散問題の安定性を示す．
+    いくつかの数値計算結果は本手法の適用性を示すものである．
+    \subsection{先行研究と比べてスゴイこと}
+    動的境界条件は二元混合系における相分離現象での境界の影響を記述したプロトタイプモデルである．
+    この動的境界条件のモデルは閉じた系での相分離現象のモデルとして\cite{Fischer,Maass,Dieterich1997}, \cite{Fischer,Maass,Dieterich1998}, \cite{KenzlerETAL2001}によって考えられている．これらでは有限差分の枠組みを用いた数値的なスキームが検討されている．
+    本論文では新たな離散化のための有限要素法を提案して解析する．
+    \cite{Elliott,French,Milner(1989)}によって提案された，標準的なCahn--Hilliard方程式に対して提案された分割スキームを拡張した，空間半離散スキームを提案する．
+    （同様の分割スキームは他のCahn--Hilliard方程式に対しても拡張されている．）
+    \subsection{論文の核となるモノ}
+    本論文の主定理である定理3.3では空間分割幅$h$が0に近づくときのエネルギーノルムと弱位相でのノルムの差の最適誤差評価を述べている．
+    \subsection{どのような手法で示したのか}
+    定理3.3の証明の概要は放物型問題の標準的な手法を用いたが，ここではいくつかの評価がより複雑になる．
+    時間離散化には後方オイラースキームを用いた完全離散スキームを提案している．
+    完全離散スキームの解はメッシュ依存性がなく安定であり，分割数無限大の極限で平衡に収束することを示した．
+    最後に半陰解法に基づく２次元空間でのFreeFem++ソフトウェアによる数値シミュレーションを示す．この問題に有限要素法を適用することは理論的，実用的に興味深い．
+    \subsection{今後の展望や課題}
+    \subsection{この論文を引用している論文}
+    \subsection{この論文が引用している主要な先行研究}
+
+
+\end{document}
