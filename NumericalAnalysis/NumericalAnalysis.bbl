@@ -1,0 +1,27 @@
+\begin{thebibliography}{1}
+
+\bibitem{ElliottFrenchMilner1989}
+C.~M. Elliott, D.~A. French, and F.~A. Milner.
+\newblock {A second order splitting method for the Cahn-Hilliard equation}.
+\newblock {\em Numerische Mathematik}, Vol.~54, No.~5, pp. 575--590, 1989.
+
+\bibitem{FischerMaassDieterich1998}
+H.~P. Fischer, P.~Maass, and W.~Dieterich.
+\newblock {Diverging time and length scales of spinodal decomposition modes in
+  thin films}.
+\newblock {\em Europhysics Letters}, Vol.~42, No.~1, pp. 49--54, 1998.
+
+\bibitem{FischerMaassDieterich1997}
+Hans~Peter Fischer, Philipp Maass, and Wolfgang Dieterich.
+\newblock {Novel surface modes in spinodal decomposition}.
+\newblock {\em Physical Review Letters}, Vol.~79, No.~5, pp. 893--896, 1997.
+
+\bibitem{KenzlerETAL2001}
+R.~Kenzler, F.~Eurich, P.~Maass, B.~Rinn, J.~Schropp, E.~Bohl, and
+  W.~Dieterich.
+\newblock {Phase separation in confined geometries: Solving the Cahn-Hilliard
+  equation with generic boundary conditions}.
+\newblock {\em Computer Physics Communications}, Vol. 133, No. 2-3, pp.
+  139--157, 2001.
+
+\end{thebibliography}
