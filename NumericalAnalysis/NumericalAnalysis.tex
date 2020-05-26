@@ -64,14 +64,14 @@
   \subsection{何に関する論文で何を示したのか}
   非透水性壁（non-permeable walls）を持つ有界領域におけるCahn--Hilliard方程式の数値解析を行った．
   ここでの動的境界条件はGoldstein, Miranville, Schimperna (2011) \cite{GoldsteinMiranvilleSchimperna2011} によって考案された次のGMS型動的境界条件を考察する．
-  % \begin{equation}
-  %   \left\{\begin{array}{llrl}
-  %   \rho_{t} & =\Delta \mu, \quad& t>0, & & x \in \Omega \\
-  %   \mu & =-\Delta \rho+f(\rho), & t>0, & & x \in \Omega \\
-  %   \rho_{t} & =\delta \Delta_{\Gamma} \mu-\partial_{n} \mu, & t>0, & & x \in \Gamma \\
-  %   \mu & =-\sigma \Delta_{\Gamma} \rho+\lambda \rho+g(\rho)+\partial_{n} \rho, & t>0, & & x \in \Gamma
-  %   \end{array}\right.
-  % \end{equation}
+  \begin{equation}
+    \left\{\begin{array}{llrl}
+    &\rho_{t} =\Delta \mu, \quad t>0, x \in \Omega \\
+    &\mu =-\Delta \rho+f(\rho), t>0, x \in \Omega \\
+    &\rho_{t} =\delta \Delta_{\Gamma} \mu-\partial_{n} \mu, t>0, x \in \Gamma \\
+    &\mu =-\sigma \Delta_{\Gamma} \rho+\lambda \rho+g(\rho)+\partial_{n} \rho, t>0, x \in \Gamma
+    \end{array}\right.
+  \end{equation}
   考える空間領域は１方向に有限の厚さを持ち残りの１，２次元方向には周期性を課す．
   \begin{equation}
     \Omega=\Pi_{i=1}^{d-1}\left(\mathbb{R} /\left(L_{i} \mathbb{Z}\right)\right) \times\left(0, L_{d}\right), \quad L_{i}>0, i=1, \ldots, d, \quad d=2 \text { or } 3
