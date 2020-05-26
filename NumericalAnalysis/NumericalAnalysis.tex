@@ -13,7 +13,8 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 
-\section{Cherfils, Laurence, Petcu, Pierre (2010) day:200526}
+\newpage
+\section{Cherfils, Petcu, Pierre (2010) day:200526}
   \subsection{論文情報}
   Cherfils, Laurence, Madalina Petcu, and Morgan Pierre. "A numerical analysis of the Cahn-Hilliard equation with dynamic boundary conditions." Discrete Contin. Dyn. Syst 27.4 (2010): 1511-1533.
   % 著者名, 論文タイトル, 掲載雑誌, 年, ページ.
@@ -40,9 +41,9 @@
   いくつかの数値計算結果は本手法の適用性を示すものである．
   \subsection{先行研究と比べてスゴイこと}
   動的境界条件は二元混合系における相分離現象での境界の影響を記述したプロトタイプモデルである．
-  この動的境界条件のモデルは閉じた系での相分離現象のモデルとして\cite{FischerMaassDieterich1997}, \cite{FischerMaassDieterich1998}, \cite{KenzlerETAL2001}によって考えられている．これらでは有限差分の枠組みを用いた数値的なスキームが検討されている．
+  この動的境界条件のモデルは閉じた系での相分離現象のモデルとしてFischer, Maass, Dieterich (1997) \cite{FischerMaassDieterich1997}, Fixcher, Maass, Dieterich (1998) \cite{FischerMaassDieterich1998}, Kenzler, et al. (2001) \cite{KenzlerETAL2001}によって考えられている．これらでは有限差分の枠組みを用いた数値的なスキームが検討されている．
   本論文では新たな離散化のための有限要素法を提案して解析する．
-  \cite{ElliottFrenchMilner1989}によって提案された，標準的なCahn--Hilliard方程式に対して提案された分割スキームを拡張した，空間半離散スキームを提案する．
+  Elliott, French, Milner (1989) \cite{ElliottFrenchMilner1989}によって提案された，標準的なCahn--Hilliard方程式に対して提案された分割スキームを拡張した，空間半離散スキームを提案する．
   （同様の分割スキームは他のCahn--Hilliard方程式に対しても拡張されている．）
   \subsection{論文の核となるモノ}
   本論文の主定理である定理3.3では空間分割幅$h$が0に近づくときのエネルギーノルムと弱位相でのノルムの差の最適誤差評価を述べている．
@@ -55,7 +56,38 @@
   \subsection{この論文を引用している論文}
   \subsection{この論文が引用している主要な先行研究}
 
-  
+\newpage
+\section{Cherfils, Petcu (2014) day:200526}
+  \subsection{論文情報}
+  Cherfils, Laurence, and Madalina Petcu. "A numerical analysis of the Cahn–Hilliard equation with non-permeable walls." Numerische Mathematik 128.3 (2014): 517-549.
+  % 著者名, 論文タイトル, 掲載雑誌, 年, ページ.
+  \subsection{何に関する論文で何を示したのか}
+  非透水性壁を持つ有界領域におけるCahn--Hilliard方程式の数値解析を行った．
+  ここでの動的境界条件はGoldstein, Miranville, Schimperna (2011) \cite{GoldsteinMiranvilleSchimperna2011} によって考案された次のGMS型動的境界条件を考察する．
+  % \begin{equation}
+  %   \left\{\begin{array}{llrl}
+  %   \rho_{t} & =\Delta \mu, \quad& t>0, & & x \in \Omega \\
+  %   \mu & =-\Delta \rho+f(\rho), & t>0, & & x \in \Omega \\
+  %   \rho_{t} & =\delta \Delta_{\Gamma} \mu-\partial_{n} \mu, & t>0, & & x \in \Gamma \\
+  %   \mu & =-\sigma \Delta_{\Gamma} \rho+\lambda \rho+g(\rho)+\partial_{n} \rho, & t>0, & & x \in \Gamma
+  %   \end{array}\right.
+  % \end{equation}
+  考える空間領域は１方向に有限の厚さを持ち残りの１，２次元方向には周期性を課す．
+  \begin{equation}
+    \Omega=\Pi_{i=1}^{d-1}\left(\mathbb{R} /\left(L_{i} \mathbb{Z}\right)\right) \times\left(0, L_{d}\right), \quad L_{i}>0, i=1, \ldots, d, \quad d=2 \text { or } 3
+  \end{equation}
+  この動的境界条件は二元物質と壁との相互作用を記述するために導入されたものである．
+  この方程式の数値解析を行うには，空間変数に対して有限要素法を用いて半離散化され厳密解と近似解との誤差評価を得る．
+  また時間離散化のための後方オイラースキームに基づく完全離散スキームの安定性を示した．
+  理論的な結果を支持するための数値シミュレーションを行った．
+  \subsection{先行研究と比べてスゴイこと}
+  \subsection{論文の核となるモノ}
+  \subsection{どのような手法で示したのか}
+  \subsection{今後の展望や課題}
+  \subsection{この論文を引用している論文}
+  \subsection{この論文が引用している主要な先行研究}
+
+\newpage
 \bibliography{references}
 \bibstyle{jplain}
 
