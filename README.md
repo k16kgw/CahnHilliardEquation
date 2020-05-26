@@ -1,4 +1,5 @@
 # CahnHilliardEquation
+Cahn-Hilliard方程式に関連する論文を読んだ記録
 
 # フォルダの説明
 ## AnalyticSolution
