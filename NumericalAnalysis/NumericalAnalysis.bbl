@@ -1,5 +1,12 @@
 \begin{thebibliography}{1}
 
+\bibitem{CherfilsPetcuPierre2010}
+Laurence Cherfils, Madalina Petcu, and Morgan Pierre.
+\newblock {A numerical analysis of the cahn-hilliard equation with dynamic
+  boundary conditions}.
+\newblock {\em Discrete and Continuous Dynamical Systems}, Vol.~27, No.~4, pp.
+  1511--1533, 2010.
+
 \bibitem{ElliottFrenchMilner1989}
 C.~M. Elliott, D.~A. French, and F.~A. Milner.
 \newblock {A second order splitting method for the Cahn-Hilliard equation}.

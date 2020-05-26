@@ -62,7 +62,7 @@
   Cherfils, Laurence, and Madalina Petcu. "A numerical analysis of the Cahn–Hilliard equation with non-permeable walls." Numerische Mathematik 128.3 (2014): 517-549.
   % 著者名, 論文タイトル, 掲載雑誌, 年, ページ.
   \subsection{何に関する論文で何を示したのか}
-  非透水性壁を持つ有界領域におけるCahn--Hilliard方程式の数値解析を行った．
+  非透水性壁（non-permeable walls）を持つ有界領域におけるCahn--Hilliard方程式の数値解析を行った．
   ここでの動的境界条件はGoldstein, Miranville, Schimperna (2011) \cite{GoldsteinMiranvilleSchimperna2011} によって考案された次のGMS型動的境界条件を考察する．
   % \begin{equation}
   %   \left\{\begin{array}{llrl}
@@ -81,8 +81,13 @@
   また時間離散化のための後方オイラースキームに基づく完全離散スキームの安定性を示した．
   理論的な結果を支持するための数値シミュレーションを行った．
   \subsection{先行研究と比べてスゴイこと}
+  異なる動的境界条件に対する数値計算を行った先行研究としてCherfils, Petcu, Pierre (2010) \cite{CherfilsPetcuPierre2010}がある．
+  これと同様のアプローチから始めるがモデルの違いにより多少の異なった扱いを行う．
+  \cite{CherfilsPetcuPierre2010}の結果と比較すると境界での挙動が異なるが内部でのパターンは似ていることが示される．
   \subsection{論文の核となるモノ}
+  空間変数については有限要素法を用いて半離散化を行い，時間離散化については後方オイラースキームに基づく完全離散スキームの安定性を考察する．
   \subsection{どのような手法で示したのか}
+  \cite{CherfilsPetcuPierre2010}と同様の半離散化，後方オイラースキームを用いる．
   \subsection{今後の展望や課題}
   \subsection{この論文を引用している論文}
   \subsection{この論文が引用している主要な先行研究}
