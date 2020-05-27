@@ -3,9 +3,10 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: NumericalAnalysis.aux
 The style file: jplain.bst
 Database file #1: references.bib
+Warning--I didn't find a database entry for "LiuWu2019"
 You've used 6 entries,
             2620 wiz_defined-function locations,
-            644 strings with 5946 characters,
+            646 strings with 5964 characters,
 and the built_in function-call counts, 3366 in all, are:
 = -- 308
 > -- 122
@@ -45,3 +46,4 @@ while$ -- 30
 width$ -- 7
 write$ -- 68
 is.kanji.str$ -- 82
+(There was 1 warning)
