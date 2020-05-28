@@ -99,13 +99,25 @@
   % 著者名, 論文タイトル, 掲載雑誌, 年, ページ.
   \subsection{何に関する論文で何を示したのか}
   Liu, Wu (2019) \cite{LiuWu2019} が提案した，内部と境界でCahn--Hilliard方程式を満たす動的境界問題についてエネルギー保存則を満たす数値シミュレーション手法を開発した．
+  この動的境界問題はMiranville, Zelik (2005) \cite{MiranvilleZelik2005} によって触発されて新たに導入された次に示す問題である．
+  \begin{equation}
+    \left\{\begin{array}{ll}
+    \phi_{t}=\Delta \mu, & \text { in } \Omega \times(0, T) \\
+    \mu=-\Delta \phi+F^{\prime}(\phi), & \text { in } \Omega \times(0, T) \\
+    \partial_{\mathbf{n}} \mu=0, & \text { on } \Gamma \times(0, T) \\
+    \left.\phi\right|_{\Gamma}=\psi, & \text { on } \Gamma \times(0, T) \\
+    \psi_{t}=\Delta_{\Gamma} \mu_{\Gamma}, & \text { on } \Gamma \times(0, T), \\
+    \mu_{\Gamma}=-k \Delta_{\Gamma} \psi+\psi+\partial_{\mathrm{n}} \phi+G^{\prime}(\psi), & \text { on } \Gamma \times(0, T) \\
+    \left.\phi\right|_{t=0}=\phi_{0}(x), & \text { in } \Omega \\
+    \left.\psi\right|_{t=0}=\psi_{0}(x):=\left.\phi_{0}(x)\right|_{\Gamma}, & \text { on } \Gamma
+    \end{array}\right.
+  \end{equation}
   モデル方程式を空間方向には連続有限要素法を，時間方向には中点スキームによって離散化を行い，動的境界条件を持つモデルに対する数値計算手法の離散エネルギー則を導出した．
   比較的粗いメッシュの場合でもこの動的境界条件を持つPhase-fieldモデルの計算においてエネルギー保存則を保つ手法が効果を発揮することを確認した．
   \subsection{先行研究と比べてスゴイこと}
   \cite{LiuWu2019}によって提案された動的境界条件はtomoving contact line条件(cf. )と密接な関係がある．
   既存の動的境界条件と比較して，この境界条件はエネルギー散逸のための十分条件として選択されているのではなく，運動的(kinematic)，エネルギー的関係と力のつり合い即によって一意に決定されている．
-  その結果としてより一般的な境界での力(general boundary force)の関係については，質量保存，エネルギー散逸，力のつり合いなどの重要な物理的拘束条件を自然に満たす．
-
+  その結果としてより一般的な境界での力(general boundary force)の関係については，質量保存，エネルギー散逸，力のつり合いなどの重要な物理的拘束条件を自然に満たす．\\
   phase-fieldモデルの数値シミュレーションは多相流 (multiphase flow) やそのダイナミクスを視覚的に直感的に表現するための重要な手段となっている．
   phase-fieldモデルを解くための数値計算手法は次に上げるように様々に開発されてきた．
   \begin{itemize}
@@ -118,8 +130,7 @@
   \end{itemize}
   これらの手法は完全離散系に引き継がれるエネルギー則を保つことにはあまり注意が払われていなかった．
   数値計算においてはより長い時間に渡って系の正しいダイナミクスを捉えるために，エネルギー則が保たれることは非常に重要である．
-  また界面近傍では急激な変化が起こるため，メッシュサイズや時間ステップを適切に制御できなければ，エネルギー則が成り立たないような誤った数値解が得られる可能性がある．
-
+  また界面近傍では急激な変化が起こるため，メッシュサイズや時間ステップを適切に制御できなければ，エネルギー則が成り立たないような誤った数値解が得られる可能性がある．\\
   近年，次に挙げるエネルギー則を保つ新しい数値解析手法の開発が行われた．
   \begin{itemize}
     \item 不変エネルギー四重化法 (invariant energy quadratization approach / IEQ法)
@@ -127,9 +138,8 @@
   \end{itemize}
   IEQ法は新しい変数の組を用いて体積ポテンシャルを二次形式に変換することで全ての非線形項を半明示的に扱い，新しい変数の支配方程式が線形楕円型方程式となるように離散化をする．
   SAV法はIEQ法の欠点を改良したものである．
-
-
   \subsection{論文の核となるモノ}
+  Phase-fieldモデルのエネルギー則を保つ方法に焦点を当てている点．
   \subsection{どのような手法で示したのか}
   モデル方程式を空間方向には連続有限要素法を，時間方向には中点スキームによって離散化を行う．
   \subsection{今後の展望や課題}

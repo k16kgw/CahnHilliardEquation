@@ -20,8 +20,8 @@
 \contentsline {subsection}{\numberline {3.1}論文情報}{4}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}何に関する論文で何を示したのか}{4}{subsection.3.2}%
 \contentsline {subsection}{\numberline {3.3}先行研究と比べてスゴイこと}{4}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}論文の核となるモノ}{4}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}どのような手法で示したのか}{4}{subsection.3.5}%
+\contentsline {subsection}{\numberline {3.4}論文の核となるモノ}{5}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}どのような手法で示したのか}{5}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}今後の展望や課題}{5}{subsection.3.6}%
 \contentsline {subsection}{\numberline {3.7}この論文を引用している論文}{5}{subsection.3.7}%
 \contentsline {subsection}{\numberline {3.8}この論文が引用している主要な先行研究}{5}{subsection.3.8}%
