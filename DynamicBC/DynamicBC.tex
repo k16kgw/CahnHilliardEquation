@@ -1,10 +1,7 @@
-\documentclass[a4paper]{article}
+\documentclass[openary, a4paper, oneside]{jsarticle}
 
 \input{../mymacro.tex}
 \input{../VCH2.tex}
-
-\usepackage{tikz}
-\usetikzlibrary{positioning}
 
 \title{サーベイ\\ - Cahn--Hilliard Equation with Dynamic Boundary Conditions -}
 \author{Keiichiro KAGAWA}
@@ -201,34 +198,42 @@ P. Colli and T. Fukao, “Equation and dynamic boundary condition of Cahn-Hillia
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Goldstein, Miranville, Schimperna (2011) \cite{GoldsteinMiranvilleSchimperna2011} note:null day:2019.10.07}
-{\bf 論文情報}：
-G. R. Goldstein, A. Miranville, and G. Schimperna, “A Cahn-Hilliard model in a domain with non-permeable walls,” Phys. D Nonlinear Phenom., vol. 240, no. 8, 2011, pp. 754-766.
+\subsection{Goldstein, Miranville, Schimperna (2011) \cite{GoldsteinMiranvilleSchimperna2011} day:191007, 200530}
+	\subsubsection{論文情報}
+	G. R. Goldstein, A. Miranville, and G. Schimperna, “A Cahn-Hilliard model in a domain with non-permeable walls,” Phys. D Nonlinear Phenom., vol. 240, no. 8, 2011, pp. 754-766.
+	% 著者名, 論文タイトル, 掲載雑誌, 年, ページ.
+	\subsubsection{何に関する論文で何を示したのか}
+	次の混合型動的境界条件下におけるCahn--Hilliard方程式の初期値問題を変分原理に基づいて導出した．
+	\begin{equation}\left\{\begin{aligned}
+		&\dt\rho - \Delta\mu = 0\quad\text{in }\Omega,\\
+		&\mu = -\Delta\rho + f(\rho)\quad\text{in }\Omega,\\
+		&w\dt\rho - \delta \Delta\sG\mu = -\dnu\mu\quad\text{on }\Gamma,\\
+		&w\mu = -\sigma\Delta\sG\rho + g(\rho) + \dnu\rho\quad\text{on }\Gamma.
+	\end{aligned}\right.\end{equation}
+	さらにこの動的境界条件下における初期値問題の弱解の存在と一意性を示し，解の長時間挙動を調べた．
+	\subsubsection{先行研究と比べてスゴイこと}
+	近年物理学者によって提案されたCahn--Hilliard方程式系の動的境界条件は壁との相互作用を説明するために導出され，全バルク質量が保存され境界上に緩和ダイナミクスが存在することを記述することで得られた．この境界条件は次のように記述される．
+	\begin{equation}
+		\begin{array}{l}
+		\partial_{n} \mu=0, \quad \text { on } \Gamma \\
+		\rho_{t}-\sigma \Delta_{\Gamma} \rho+g(\rho)+\partial_{n} \rho=0, \quad \text { on } \Gamma, \sigma>0
+		\end{array}
+	\end{equation}
+	この境界条件は二元系金属合金のような系でも重要だが，主にポリマー混合物について研究が進められてきた．
+	この境界条件については Fischer, Maass, Dieterich (1997) \cite{FischerMaassDieterich1997}, Fischer, Maass, Dieterich (1998) \cite{FischerMaassDieterich1998}, Fischer et al. (1998) \cite{FischerReinhardDietrichETAL1998}.
 
-{\bf 主問題}：
-\begin{equation}\left\{\begin{aligned}
-	&\dt\rho - \Delta\mu = 0\quad\text{in }\Omega,\\
-	&\mu = -\Delta\rho + f(\rho)\quad\text{in }\Omega,\\
-	&w\dt\rho - \delta \Delta\sG\mu = -\dnu\mu\quad\text{on }\Gamma,\\
-	&w\mu = -\sigma\Delta\sG\rho + g(\rho) + \dnu\rho\quad\text{on }\Gamma.
-\end{aligned}\right.\end{equation}
+	しかし非透水性の壁（non-permeable walls）の場合には境界上にもある程度の質量が存在することを考慮に入れ，バルクと境界での質量の合計質量が保存すると仮定する方が自然だと考え，そのような境界条件を考案した．
+	このモデルの導出は変分原理に基づいている．
 
-
-{\bf 先行結果}：
-
-スピノーダル分解などの物理背景について.
-cf. Cahn (1961) \cite{Cahn1961}, Cahn, Hilliard (1958) \cite{CahnHilliard1958}, Novick-Cohen (2008) \cite{NovickCohen2008}.
-
-動的境界条件はCahn--Hilliard方程式において閉じた系の壁との相互作用を説明するために, 近年(当時)物理学者によって提案された.
-cf. Fischer, Maass, Dieterich (1997) \cite{FixcherMaassDieterich1997}, Fischer, Maass, Dieterich (1998) \cite{FixcherMaassDieterich1998}, Fischer et al. (1998) \cite{FischerETAL1998}.
-
-{\bf 新規性}：
-
-{\bf 主結果}：
-
-{\bf 戦略}：
-
-
+	スピノーダル分解は材料の機械特性に大きな影響を及ぼすが，この点に関しては Cahn (1961) \cite{Cahn1961}, Cahn, Hilliard (1958) \cite{CahnHilliard1958}, Novick-Cohen (2008) \cite{NovickCohen2008} を参照のこと．
+	\subsubsection{論文の核となるモノ}
+	初期値問題の適切性の証明
+	\subsubsection{どのような手法で示したのか}
+	非線形項$f$と$g$について増大度に関する制限を加え，十分な正則性をもつ初期値に対して強解を得ることを示した．またコンパクトな大域アトラクタの存在を示し，解の軌道の$\omega$-極限集合の存在を示した．
+	また$f$と$g$が追加の技術的な条件を満たす場合に{\L}ojasiewicz--Simon法（cf. Chill, Fa\v{s}angov\'a, Pr\"uss \cite{ChillFasangovaPruss2006}）を用いて任意の軌道の$\omega$-極限集合が1つの点からなることを示した．
+	\subsubsection{今後の展望や課題}
+	\subsubsection{この論文を引用している論文}
+	\subsubsection{この論文が引用している主要な先行研究}
 
 
 \newpage
@@ -1070,144 +1075,137 @@ WuによるRIMSでの講演論文.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{参考文献}
-\begin{thebibliography}{99}
-	\bibitem{Aiki1993}
-		T. Aiki, "Two-phase Stefan problems with dynamic boundary conditions." Adv. Math. Sci. Appl 2 (1993): 253-270.
-	\bibitem{Aiki1995}
-		Toyohiko, Aiki. "Multi-dimensional Stefan problems with dynamic boundary conditions." Applicable Analysis 56.1-2 (1995): 71-94.
-	\bibitem{Aiki1996}
-		Toyohiko Aiki, "Periodic stability of solutions to some degenerate parabolic equations with dynamic boundary conditions." Journal of the Mathematical Society of Japan 48.1 (1996): 37-59.
-	\bibitem{Cahn1961}
-		John W. Cahn "On spinodal decomposition." Acta metallurgica 9.9 (1961): 795-801.
-	\bibitem{CahnHilliard1958}
-		John W. Cahn, and John E. Hilliard. "Free energy of a nonuniform system. I. Interfacial free energy." The Journal of chemical physics 28.2 (1958): 258-267.
-	\bibitem{CherfilsMiranville2009}
-		Cherfils, Laurence, and Alain Miranville. "On the Caginalp system with dynamic boundary conditions and singular potentials." Applications of Mathematics 54.2 (2009): 89-115.
-	\bibitem{CherfilsMiranvilleZelik2011}
-		Cherfils, Laurence, Alain Miranville, and Sergey Zelik. "The Cahn-Hilliard equation with logarithmic potentials." Milan Journal of Mathematics 79.2 (2011): 561-596.
-	\bibitem{ChillETAL2006}
-		Chill, Ralph, Eva Fa\v{s}angov\'a, and Jan Pr\"uss. "Convergence to steady states of solutions of the Cahn-Hilliard and Caginalp equations with dynamic boundary conditions." Mathematische Nachrichten 279.13‐14 (2006): 1448-1462.
-	\bibitem{ColliFukao2014}
-		Pierluigi, Colli and Takeshi Fukao. "The Allen–Cahn equation with dynamic boundary conditions and mass constraints." Mathematical Methods in the Applied Sciences 38.17 (2015): 3950-3967.
-	\bibitem{ColliFukao2015-CH-AC}
-		P. Colli and T. Fukao, “Cahn-Hilliard equation with dynamic boundary conditions and mass constraint on the boundary,” J. Math. Anal. Appl., vol. 429, no. 2, pp. 1190-1213, 2015.
-	\bibitem{ColliFukao2015-GMS}
-		P. Colli and T. Fukao, “Equation and dynamic boundary condition of Cahn-Hilliard type with singular potentials,” Nonlinear Anal. Theory, Methods Appl., vol. 127, 2015, pp. 413-433.
-	\bibitem{ColliFukao2015-AC}
-		Pierluigi Colli, and Takeshi Fukao. "The Allen–Cahn equation with dynamic boundary conditions and mass constraints." Mathematical Methods in the Applied Sciences 38.17 (2015): 3950-3967.
-	\bibitem{ColliFGS2015}
-		P. Colli, M. Hassan Farshbaf-Shaker, G. Gilardi, J. Sprekels, "Optimal Boundary Control of a Viscous Cahn--Hilliard System with Dynamic Boundary Condition and Double Obstacle Potentials." SIAM Journal on Control and Optimization 53.4 (2015): 2696-2721. doi:10.1007/s00245-015-9299-z.
-	\bibitem{ColliFS2015}
-		Pierluigi Colli, M. Hassan Farshbaf-Shaker, and Jürgen Sprekels. "A deep quench approach to the optimal control of an Allen–Cahn equation with dynamic boundary conditions and double obstacles." Applied Mathematics \& Optimization 71.1 (2015): 1-24.
-	\bibitem{ColliFukaoWu2020}
-		Pierluigi Colli, Takeshi Fukao, and Hao Wu. "On a transmission problem for equation and dynamic boundary condition of Cahn-Hilliard type with nonsmooth potentials." arXiv preprint arXiv:1907.13278 (2019).
-		(cf. http://math.kyokyo-u.ac.jp/~fukao/resj.html 閲覧日:2019/10/23)
-	\bibitem{ColliGPS2011}
-		P. Colli, G. Gilardi, P. Podio-Guidugli, J. Sprekels. "Well-posedness and long-time behavior for a nonstandard viscous Cahn–Hilliard system." SIAM Journal on Applied Mathematics 71.6 (2011): 1849-1870.
-	\bibitem{ColliGilardiSprekels2014}
-		Pierluigi Colli, Gianni Gilardi, and J\"urgen Sprekels. "On the Cahn–Hilliard equation with dynamic boundary conditions and a dominating boundary potential." Journal of Mathematical Analysis and Applications 419.2 (2014): 972-994.
-	\bibitem{ColliGilardiSprekels2016}
-		Colli, Pierluigi, Gianni Gilardi, and J\"urgen Sprekels. "A boundary control problem for the viscous Cahn–Hilliard equation with dynamic boundary conditions." Applied Mathematics \& Optimization 73.2 (2016): 195-225.
-	\bibitem{ColliGilardiSprekels2017}
-		Colli, Pierluigi, Gianni Gilardi, and J\"urgen Sprekels. "Global Existence for a Nonstandard Viscous Cahn--Hilliard System with Dynamic Boundary Condition." SIAM Journal on Mathematical Analysis 49.3 (2017): 1732-1760.
-	\bibitem{ColliGilardiSprekels2018}
-		P. Colli, G. Gilardi, and J. Sprekels, “On a Cahn--Hilliard system with convection and dynamic boundary conditions,” vol. 197, no. 5. Springer Berlin Heidelberg, 2018.
-	\bibitem{ElliottZheng1986}
-		Charles M. Elliott, and Songmu Zheng. "On the cahn-hilliard equation." Archive for Rational Mechanics and Analysis 96.4 (1986): 339-357.
-	\bibitem{Escher1993}
-		Joachim Escher. "Quasilinear parabolic systems with dynamical boundary conditions." Communications in partial differential equations 18.7-8 (1993): 1309-1364.
-	\bibitem{Escher1994}
-		Joachim Escher. "On quasilinear fully parabolic boundary value problems." Differential and Integral Equations 7.5-6 (1994): 1325-1343.
-	\bibitem{FischerMaassDieterich1997}
-		Hans Peter Fischer, Philipp Maass, and Wolfgang Dieterich. "Novel surface modes in spinodal decomposition." Physical review letters 79.5 (1997): 893.
-	\bibitem{FischerMaassDieterich1998}
-		Hans Peter Fischer, Philipp Maass, and Wolfgang Dieterich. "Diverging time and length scales of spinodal decomposition modes in thin films." EPL (Europhysics Letters) 42.1 (1998): 49.
-	\bibitem{FischerETAL1998}
-		H. P. Fischer, J. Reinhard, W. Dieterich, J. F. Gouyet, P. Maass, A. Majhofer, D. Reinel "Time-dependent density functional theory and the kinetics of lattice gas systems in contact with a wall." The Journal of chemical physics 108.7 (1998): 3028-3037.
-	\bibitem{FriedGurtin1993}
-		Eliot Fried, and Morton E. Gurtin. "Continuum theory of thermally induced phase transitions based on an order parameter." Physica D: Nonlinear Phenomena 68.3-4 (1993): 326-343.
-	\bibitem{FukaoKenmochi2013}
-		Takeshi Fukao, and Nobuyuki Kenmochi. "Abstract theory of variational inequalities and Lagrange multipliers." Conference Publications, 2013.
-	\bibitem{GalGrasselli2008}
-		Gal, Ciprian G., and Maurizio Grasselli. "The non-isothermal Allen-Cahn equation with dynamic boundary conditions." Discrete \& Continuous Dynamical Systems-A 22.4 (2008): 1009.
-	\bibitem{GarckeKnopf2018}
-		Harald Garcke, and Patrik Knopf. "Weak solutions of the Cahn-Hilliard system with dynamic boundary conditions: A gradient flow approach." arXiv preprint arXiv:1810.09817 (2018).
-	\bibitem{GattiMiranville2006}
-		Gatti, Stefania, and Alain Miranville. "Asymptotic behavior of a phase field system with dynamic boundary conditions." Lecture Notes in Pure and Applied Mathematics 251 (2006): 149.
-	\bibitem{GilardiMiranvilleSchimperna2009}
-		Gilardi, Gianni, Alain Miranville, and Giulio Schimperna. "On the Cahn-Hilliard equation with irregular potentials and dynamic boundary conditions." Communications on Pure \& Applied Analysis 8.3 (2009): 881.
-	\bibitem{GilardiMiranvilleSchimperna2010}
-		Gilardi, Gianni, Alain Miranville, and Giulio Schimperna. "Long time behavior of the Cahn-Hilliard equation with irregular potentials and dynamic boundary conditions." Chinese Annals of Mathematics, Series B 31.5 (2010): 679-712.
-	\bibitem{GoldsteinMiranvilleSchimperna2011}
-		G. R. Goldstein, A. Miranville, and G. Schimperna, “A Cahn-Hilliard model in a domain with non-permeable walls,” Phys. D Nonlinear Phenom., vol. 240, no. 8, 2011, pp. 754-766.
-	\bibitem{GrasselliSchimpernaSegattiZelik2009}
-		Grasselli, Maurizio, Giulio Schimperna, Antonio Segatti, and Sergey Zelik, "On the 3D Cahn–Hilliard equation with inertial term." Journal of Evolution Equations 9.2 (2009): 371-404.
-	\bibitem{Gurtin1996}
-		Morton E. Gurtin "Generalized Ginzburg-Landau and Cahn-Hilliard equations based on a microforce balance." Physica D: Nonlinear Phenomena 92.3-4 (1996): 178-192.
-	\bibitem{Hintermann1989}
-		Thomas Hintermann. "Evolution equations with dynamic boundary conditions." Proceedings of the Royal Society of Edinburgh Section A: Mathematics 113.1-2 (1989): 43-60.
-	\bibitem{KenmochiNiezgodka1996}
-		Nobuyuki Kenmochi, and Marek Niezgódka. "Viscosity approach to modelling non-isothermal diffusive phase separation." Japan Journal of Industrial and Applied Mathematics 13.1 (1996): 135.
-	\bibitem{KenmochiNiezgodkaPawlow1995}
-		Nobuyuki Kenmochi, Marek Niezg\'odka, and Irena Pawlow. "Subdifferential operator approach to the Cahn-Hilliard equation with constraint." Journal of differential equations 117 (1995): 320-356.
-	\bibitem{KnopfLam2019}
-		Patrik Knopf, and Kei Fong Lam. "Convergence of a Robin boundary approximation for a Cahn--Hilliard system with dynamic boundary conditions." arXiv preprint arXiv:1908.06124 (2019).
-	\bibitem{Kubo2012}
-		Masahiro Kubo, "The Cahn–Hilliard equation with time-dependent constraint." Nonlinear Analysis: Theory, Methods \& Applications 75.14 (2012): 5672-5685.
-	\bibitem{LamWu2019}
-		Kei Fong Lam, and Hao Wu. "Convergence to equilibrium for a bulk--surface Allen--Cahn system coupled through a Robin boundary condition." arXiv preprint arXiv:1902.07020 (2019).
-	\bibitem{LaurenceMiranvilleZelik}
-		Cherfils, Laurence, Alain Miranville, and Sergey Zelik. "The Cahn-Hilliard equation with logarithmic potentials." Milan Journal of Mathematics 79.2 (2011): 561-596.
-	\bibitem{LiuWu2019}
-		Chun Liu, and Hao Wu. "An energetic variational approach for the Cahn–Hilliard equation with dynamic boundary condition: model derivation and mathematical analysis." Archive for Rational Mechanics and Analysis 233.1 (2019): 167-247.
-	\bibitem{MiranvilleZelik2004}
-		Miranville, Alain, and Sergey Zelik. "Robust exponential attractors for Cahn‐Hilliard type equations with singular potentials." Mathematical methods in the applied sciences 27.5 (2004): 545-582.
-	\bibitem{MiranvilleZelik2005}
-		Alain Miranville, and Sergey Zelik. "Exponential attractors for the Cahn–Hilliard equation with dynamic boundary conditions." Mathematical methods in the applied sciences 28.6 (2005): 709-735. doi:10.1002/mma.590.
-	\bibitem{MiranvilleZelik2008}
-		Miranville, A., and S. Zelik. "Attractors for dissipative partial differential equations in bounded and unbounded domains." Handbook of differential equations: evolutionary equations 4 (2008): 103-200.
-	\bibitem{MiranvilleZelik2009}
-		Alain Miranville, and Sergey Zelik. "The Cahn-Hilliard equation with singular potentials and dynamic boundary conditions." arXiv preprint arXiv:0904.4023 (2009).
-		http://arxiv.org/abs/0904.4023.
-	\bibitem{NovickCohen2008}
-		Novick-Cohen, Amy. "The cahn–hilliard equation." Handbook of differential equations: evolutionary equations 4 (2008): 201-228.
-	\bibitem{PodioGuidugli2006}
-		Paolo Podio-Guidugli. "Models of phase segregation and diffusion of atomic species on a lattice." Ricerche di Matematica 55.1 (2006): 105-118.
-	\bibitem{PrussRackeZheng2006}
-		Pr\"uss, Jan, Reinhard Racke, and Songmu Zheng. "Maximal regularity and asymptotic behavior of solutions for the Cahn–Hilliard equation with dynamic boundary conditions." Annali di Matematica Pura ed Applicata 185.4 (2006): 627-648.
-	\bibitem{QinBOOK}
-		Qin, Yuming. Nonlinear parabolic-hyperbolic coupled systems and their attractors. Vol. 184. Springer Science \& Business Media, 2008.
-	\bibitem{RackeZheng2003}
-		Reinhard Racke, and Songmu Zheng. "The Cahn-Hilliard equation with dynamic boundary conditions." Advances in Differential Equations 8.1 (2003): 83-110.
-	\bibitem{SatoAiki2001}
-		Naoki Sato, and Toyohiko Aiki. "Phase field equations with constraints under nonlinear dynamic boundary conditions." Communications in Applied Analysis 5.2 (2001): 215-234.
-	\bibitem{Scarpa2019}
-		Luca Scarpa. "Existence and uniqueness of solutions to singular Cahn–Hilliard equations with nonlinear viscosity terms and dynamic boundary conditions." Journal of Mathematical Analysis and Applications 469.2 (2019): 730-764.
-	\bibitem{TemamBOOK}
-		Roger Temam, Infinite-dimensional dynamical systems in mechanics and physics. Vol. 68. Springer Science \& Business Media, 2012.
-	\bibitem{Wu2018}
-		H. Wu, The Cahn–Hilliard equation with a new class of dynamic boundary conditions, pp. 117– 131 in “Theory of Evolution Equation and Mathematical Analysis of Nonlinear Phenomena”, RIMS K\^oky\^uroku, 2090, Kyoto University, 2018.
-	\bibitem{WuZheng2004}
-		Wu, Hao, and Songmu Zheng. "Convergence to equilibrium for the Cahn–Hilliard equation with dynamic boundary conditions." Journal of differential equations 204.2 (2004): 511-531.
-	\bibitem{Zheng1986}
-		Songmu Zheng. "Asymptotic behavior of solution to the Cahn-Hillard equation." Applicable Analysis 23.3 (1986): 165-184.
-	\bibitem{ZhengBOOK}
-		Zheng, Songmu. Nonlinear evolution equations. CRC Press, 2004.
-	\end{thebibliography}
+% \section{参考文献}
+% \begin{thebibliography}{99}
+% 	\bibitem{Aiki1993}
+% 		T. Aiki, "Two-phase Stefan problems with dynamic boundary conditions." Adv. Math. Sci. Appl 2 (1993): 253-270.
+% 	\bibitem{Aiki1995}
+% 		Toyohiko, Aiki. "Multi-dimensional Stefan problems with dynamic boundary conditions." Applicable Analysis 56.1-2 (1995): 71-94.
+% 	\bibitem{Aiki1996}
+% 		Toyohiko Aiki, "Periodic stability of solutions to some degenerate parabolic equations with dynamic boundary conditions." Journal of the Mathematical Society of Japan 48.1 (1996): 37-59.
+% 	\bibitem{Cahn1961}
+% 		John W. Cahn "On spinodal decomposition." Acta metallurgica 9.9 (1961): 795-801.
+% 	\bibitem{CahnHilliard1958}
+% 		John W. Cahn, and John E. Hilliard. "Free energy of a nonuniform system. I. Interfacial free energy." The Journal of chemical physics 28.2 (1958): 258-267.
+% 	\bibitem{CherfilsMiranville2009}
+% 		Cherfils, Laurence, and Alain Miranville. "On the Caginalp system with dynamic boundary conditions and singular potentials." Applications of Mathematics 54.2 (2009): 89-115.
+% 	\bibitem{CherfilsMiranvilleZelik2011}
+% 		Cherfils, Laurence, Alain Miranville, and Sergey Zelik. "The Cahn-Hilliard equation with logarithmic potentials." Milan Journal of Mathematics 79.2 (2011): 561-596.
+% 	\bibitem{ChillETAL2006}
+% 		Chill, Ralph, Eva Fa\v{s}angov\'a, and Jan Pr\"uss. "Convergence to steady states of solutions of the Cahn-Hilliard and Caginalp equations with dynamic boundary conditions." Mathematische Nachrichten 279.13‐14 (2006): 1448-1462.
+% 	\bibitem{ColliFukao2014}
+% 		Pierluigi, Colli and Takeshi Fukao. "The Allen–Cahn equation with dynamic boundary conditions and mass constraints." Mathematical Methods in the Applied Sciences 38.17 (2015): 3950-3967.
+% 	\bibitem{ColliFukao2015-CH-AC}
+% 		P. Colli and T. Fukao, “Cahn-Hilliard equation with dynamic boundary conditions and mass constraint on the boundary,” J. Math. Anal. Appl., vol. 429, no. 2, pp. 1190-1213, 2015.
+% 	\bibitem{ColliFukao2015-GMS}
+% 		P. Colli and T. Fukao, “Equation and dynamic boundary condition of Cahn-Hilliard type with singular potentials,” Nonlinear Anal. Theory, Methods Appl., vol. 127, 2015, pp. 413-433.
+% 	\bibitem{ColliFukao2015-AC}
+% 		Pierluigi Colli, and Takeshi Fukao. "The Allen–Cahn equation with dynamic boundary conditions and mass constraints." Mathematical Methods in the Applied Sciences 38.17 (2015): 3950-3967.
+% 	\bibitem{ColliFGS2015}
+% 		P. Colli, M. Hassan Farshbaf-Shaker, G. Gilardi, J. Sprekels, "Optimal Boundary Control of a Viscous Cahn--Hilliard System with Dynamic Boundary Condition and Double Obstacle Potentials." SIAM Journal on Control and Optimization 53.4 (2015): 2696-2721. doi:10.1007/s00245-015-9299-z.
+% 	\bibitem{ColliFS2015}
+% 		Pierluigi Colli, M. Hassan Farshbaf-Shaker, and Jürgen Sprekels. "A deep quench approach to the optimal control of an Allen–Cahn equation with dynamic boundary conditions and double obstacles." Applied Mathematics \& Optimization 71.1 (2015): 1-24.
+% 	\bibitem{ColliFukaoWu2020}
+% 		Pierluigi Colli, Takeshi Fukao, and Hao Wu. "On a transmission problem for equation and dynamic boundary condition of Cahn-Hilliard type with nonsmooth potentials." arXiv preprint arXiv:1907.13278 (2019).
+% 		(cf. http://math.kyokyo-u.ac.jp/~fukao/resj.html 閲覧日:2019/10/23)
+% 	\bibitem{ColliGPS2011}
+% 		P. Colli, G. Gilardi, P. Podio-Guidugli, J. Sprekels. "Well-posedness and long-time behavior for a nonstandard viscous Cahn–Hilliard system." SIAM Journal on Applied Mathematics 71.6 (2011): 1849-1870.
+% 	\bibitem{ColliGilardiSprekels2014}
+% 		Pierluigi Colli, Gianni Gilardi, and J\"urgen Sprekels. "On the Cahn–Hilliard equation with dynamic boundary conditions and a dominating boundary potential." Journal of Mathematical Analysis and Applications 419.2 (2014): 972-994.
+% 	\bibitem{ColliGilardiSprekels2016}
+% 		Colli, Pierluigi, Gianni Gilardi, and J\"urgen Sprekels. "A boundary control problem for the viscous Cahn–Hilliard equation with dynamic boundary conditions." Applied Mathematics \& Optimization 73.2 (2016): 195-225.
+% 	\bibitem{ColliGilardiSprekels2017}
+% 		Colli, Pierluigi, Gianni Gilardi, and J\"urgen Sprekels. "Global Existence for a Nonstandard Viscous Cahn--Hilliard System with Dynamic Boundary Condition." SIAM Journal on Mathematical Analysis 49.3 (2017): 1732-1760.
+% 	\bibitem{ColliGilardiSprekels2018}
+% 		P. Colli, G. Gilardi, and J. Sprekels, “On a Cahn--Hilliard system with convection and dynamic boundary conditions,” vol. 197, no. 5. Springer Berlin Heidelberg, 2018.
+% 	\bibitem{ElliottZheng1986}
+% 		Charles M. Elliott, and Songmu Zheng. "On the cahn-hilliard equation." Archive for Rational Mechanics and Analysis 96.4 (1986): 339-357.
+% 	\bibitem{Escher1993}
+% 		Joachim Escher. "Quasilinear parabolic systems with dynamical boundary conditions." Communications in partial differential equations 18.7-8 (1993): 1309-1364.
+% 	\bibitem{Escher1994}
+% 		Joachim Escher. "On quasilinear fully parabolic boundary value problems." Differential and Integral Equations 7.5-6 (1994): 1325-1343.
+% 	\bibitem{FischerMaassDieterich1997}
+% 		Hans Peter Fischer, Philipp Maass, and Wolfgang Dieterich. "Novel surface modes in spinodal decomposition." Physical review letters 79.5 (1997): 893.
+% 	\bibitem{FischerMaassDieterich1998}
+% 		Hans Peter Fischer, Philipp Maass, and Wolfgang Dieterich. "Diverging time and length scales of spinodal decomposition modes in thin films." EPL (Europhysics Letters) 42.1 (1998): 49.
+% 	\bibitem{FischerETAL1998}
+% 		H. P. Fischer, J. Reinhard, W. Dieterich, J. F. Gouyet, P. Maass, A. Majhofer, D. Reinel "Time-dependent density functional theory and the kinetics of lattice gas systems in contact with a wall." The Journal of chemical physics 108.7 (1998): 3028-3037.
+% 	\bibitem{FriedGurtin1993}
+% 		Eliot Fried, and Morton E. Gurtin. "Continuum theory of thermally induced phase transitions based on an order parameter." Physica D: Nonlinear Phenomena 68.3-4 (1993): 326-343.
+% 	\bibitem{FukaoKenmochi2013}
+% 		Takeshi Fukao, and Nobuyuki Kenmochi. "Abstract theory of variational inequalities and Lagrange multipliers." Conference Publications, 2013.
+% 	\bibitem{GalGrasselli2008}
+% 		Gal, Ciprian G., and Maurizio Grasselli. "The non-isothermal Allen-Cahn equation with dynamic boundary conditions." Discrete \& Continuous Dynamical Systems-A 22.4 (2008): 1009.
+% 	\bibitem{GarckeKnopf2018}
+% 		Harald Garcke, and Patrik Knopf. "Weak solutions of the Cahn-Hilliard system with dynamic boundary conditions: A gradient flow approach." arXiv preprint arXiv:1810.09817 (2018).
+% 	\bibitem{GattiMiranville2006}
+% 		Gatti, Stefania, and Alain Miranville. "Asymptotic behavior of a phase field system with dynamic boundary conditions." Lecture Notes in Pure and Applied Mathematics 251 (2006): 149.
+% 	\bibitem{GilardiMiranvilleSchimperna2009}
+% 		Gilardi, Gianni, Alain Miranville, and Giulio Schimperna. "On the Cahn-Hilliard equation with irregular potentials and dynamic boundary conditions." Communications on Pure \& Applied Analysis 8.3 (2009): 881.
+% 	\bibitem{GilardiMiranvilleSchimperna2010}
+% 		Gilardi, Gianni, Alain Miranville, and Giulio Schimperna. "Long time behavior of the Cahn-Hilliard equation with irregular potentials and dynamic boundary conditions." Chinese Annals of Mathematics, Series B 31.5 (2010): 679-712.
+% 	\bibitem{GoldsteinMiranvilleSchimperna2011}
+% 		G. R. Goldstein, A. Miranville, and G. Schimperna, “A Cahn-Hilliard model in a domain with non-permeable walls,” Phys. D Nonlinear Phenom., vol. 240, no. 8, 2011, pp. 754-766.
+% 	\bibitem{GrasselliSchimpernaSegattiZelik2009}
+% 		Grasselli, Maurizio, Giulio Schimperna, Antonio Segatti, and Sergey Zelik, "On the 3D Cahn–Hilliard equation with inertial term." Journal of Evolution Equations 9.2 (2009): 371-404.
+% 	\bibitem{Gurtin1996}
+% 		Morton E. Gurtin "Generalized Ginzburg-Landau and Cahn-Hilliard equations based on a microforce balance." Physica D: Nonlinear Phenomena 92.3-4 (1996): 178-192.
+% 	\bibitem{Hintermann1989}
+% 		Thomas Hintermann. "Evolution equations with dynamic boundary conditions." Proceedings of the Royal Society of Edinburgh Section A: Mathematics 113.1-2 (1989): 43-60.
+% 	\bibitem{KenmochiNiezgodka1996}
+% 		Nobuyuki Kenmochi, and Marek Niezgódka. "Viscosity approach to modelling non-isothermal diffusive phase separation." Japan Journal of Industrial and Applied Mathematics 13.1 (1996): 135.
+% 	\bibitem{KenmochiNiezgodkaPawlow1995}
+% 		Nobuyuki Kenmochi, Marek Niezg\'odka, and Irena Pawlow. "Subdifferential operator approach to the Cahn-Hilliard equation with constraint." Journal of differential equations 117 (1995): 320-356.
+% 	\bibitem{KnopfLam2019}
+% 		Patrik Knopf, and Kei Fong Lam. "Convergence of a Robin boundary approximation for a Cahn--Hilliard system with dynamic boundary conditions." arXiv preprint arXiv:1908.06124 (2019).
+% 	\bibitem{Kubo2012}
+% 		Masahiro Kubo, "The Cahn–Hilliard equation with time-dependent constraint." Nonlinear Analysis: Theory, Methods \& Applications 75.14 (2012): 5672-5685.
+% 	\bibitem{LamWu2019}
+% 		Kei Fong Lam, and Hao Wu. "Convergence to equilibrium for a bulk--surface Allen--Cahn system coupled through a Robin boundary condition." arXiv preprint arXiv:1902.07020 (2019).
+% 	\bibitem{LaurenceMiranvilleZelik}
+% 		Cherfils, Laurence, Alain Miranville, and Sergey Zelik. "The Cahn-Hilliard equation with logarithmic potentials." Milan Journal of Mathematics 79.2 (2011): 561-596.
+% 	\bibitem{LiuWu2019}
+% 		Chun Liu, and Hao Wu. "An energetic variational approach for the Cahn–Hilliard equation with dynamic boundary condition: model derivation and mathematical analysis." Archive for Rational Mechanics and Analysis 233.1 (2019): 167-247.
+% 	\bibitem{MiranvilleZelik2004}
+% 		Miranville, Alain, and Sergey Zelik. "Robust exponential attractors for Cahn‐Hilliard type equations with singular potentials." Mathematical methods in the applied sciences 27.5 (2004): 545-582.
+% 	\bibitem{MiranvilleZelik2005}
+% 		Alain Miranville, and Sergey Zelik. "Exponential attractors for the Cahn–Hilliard equation with dynamic boundary conditions." Mathematical methods in the applied sciences 28.6 (2005): 709-735. doi:10.1002/mma.590.
+% 	\bibitem{MiranvilleZelik2008}
+% 		Miranville, A., and S. Zelik. "Attractors for dissipative partial differential equations in bounded and unbounded domains." Handbook of differential equations: evolutionary equations 4 (2008): 103-200.
+% 	\bibitem{MiranvilleZelik2009}
+% 		Alain Miranville, and Sergey Zelik. "The Cahn-Hilliard equation with singular potentials and dynamic boundary conditions." arXiv preprint arXiv:0904.4023 (2009).
+% 		http://arxiv.org/abs/0904.4023.
+% 	\bibitem{NovickCohen2008}
+% 		Novick-Cohen, Amy. "The cahn–hilliard equation." Handbook of differential equations: evolutionary equations 4 (2008): 201-228.
+% 	\bibitem{PodioGuidugli2006}
+% 		Paolo Podio-Guidugli. "Models of phase segregation and diffusion of atomic species on a lattice." Ricerche di Matematica 55.1 (2006): 105-118.
+% 	\bibitem{PrussRackeZheng2006}
+% 		Pr\"uss, Jan, Reinhard Racke, and Songmu Zheng. "Maximal regularity and asymptotic behavior of solutions for the Cahn–Hilliard equation with dynamic boundary conditions." Annali di Matematica Pura ed Applicata 185.4 (2006): 627-648.
+% 	\bibitem{QinBOOK}
+% 		Qin, Yuming. Nonlinear parabolic-hyperbolic coupled systems and their attractors. Vol. 184. Springer Science \& Business Media, 2008.
+% 	\bibitem{RackeZheng2003}
+% 		Reinhard Racke, and Songmu Zheng. "The Cahn-Hilliard equation with dynamic boundary conditions." Advances in Differential Equations 8.1 (2003): 83-110.
+% 	\bibitem{SatoAiki2001}
+% 		Naoki Sato, and Toyohiko Aiki. "Phase field equations with constraints under nonlinear dynamic boundary conditions." Communications in Applied Analysis 5.2 (2001): 215-234.
+% 	\bibitem{Scarpa2019}
+% 		Luca Scarpa. "Existence and uniqueness of solutions to singular Cahn–Hilliard equations with nonlinear viscosity terms and dynamic boundary conditions." Journal of Mathematical Analysis and Applications 469.2 (2019): 730-764.
+% 	\bibitem{TemamBOOK}
+% 		Roger Temam, Infinite-dimensional dynamical systems in mechanics and physics. Vol. 68. Springer Science \& Business Media, 2012.
+% 	\bibitem{Wu2018}
+% 		H. Wu, The Cahn–Hilliard equation with a new class of dynamic boundary conditions, pp. 117– 131 in “Theory of Evolution Equation and Mathematical Analysis of Nonlinear Phenomena”, RIMS K\^oky\^uroku, 2090, Kyoto University, 2018.
+% 	\bibitem{WuZheng2004}
+% 		Wu, Hao, and Songmu Zheng. "Convergence to equilibrium for the Cahn–Hilliard equation with dynamic boundary conditions." Journal of differential equations 204.2 (2004): 511-531.
+% 	\bibitem{Zheng1986}
+% 		Songmu Zheng. "Asymptotic behavior of solution to the Cahn-Hillard equation." Applicable Analysis 23.3 (1986): 165-184.
+% 	\bibitem{ZhengBOOK}
+% 		Zheng, Songmu. Nonlinear evolution equations. CRC Press, 2004.
+% 	\end{thebibliography}
+
+\bibliography{references}
+\bibstyle{jplain}
+%jplain:sort, junsrt:unsort
 
 \appendix
-
-\subsection{著者 (出版年) day:記録をつけた日}
-	\subsubsection{論文情報}
-	著者名, 論文タイトル, 掲載雑誌, 年, ページ.
-	\subsubsection{何に関する論文で何を示したのか}
-	\subsubsection{先行研究と比べてスゴイこと}
-	\subsubsection{論文の核となるモノ}
-	\subsubsection{どのような手法で示したのか}
-	\subsubsection{今後の展望や課題}
-	\subsubsection{この論文が引用している主要な先行研究}
-	\subsubsection{この論文を引用している論文}
 
 %\newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

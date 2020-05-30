@@ -1,3 +1,91 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{10}
+
+\bibitem{Aiki1995}
+Toyohiko Aiki.
+\newblock {Multi-dimensional Stefan Problems with Dynamic Boundary Conditions}.
+\newblock {\em Applicable Analysis}, Vol.~56, No. 1-2, pp. 71--94, 1995.
+
+\bibitem{Aiki1996}
+Toyohiko Aiki.
+\newblock {Periodic stability of solutions to some degenerate parabolic
+  equations with dynamic}.
+\newblock {\em J. Math. Soc. Japan}, Vol.~48, No.~1, pp. 37--59, 1996.
+
+\bibitem{ChillFasangovaPruss2006}
+Ralph Chill, Eva Fa{\v{s}}angov{\'{a}}, and Jan Pr{\"{u}}ss.
+\newblock {Convergence to steady states of solutions of the Cahn-Hilliard and
+  Caginalp equations with dynamic boundary conditions}.
+\newblock {\em Mathematische Nachrichten}, 2006.
+
+\bibitem{FischerMaassDieterich1998}
+H.~P. Fischer, P.~Maass, and W.~Dieterich.
+\newblock {Diverging time and length scales of spinodal decomposition modes in
+  thin films}.
+\newblock {\em Europhysics Letters}, Vol.~42, No.~1, pp. 49--54, 1998.
+
+\bibitem{FischerReinhardDietrichETAL1998}
+H.~P. Fischer, J.~Reinhard, W.~Dieterich, J.~F. Gouyet, P.~Maass, A.~Majhofer,
+  and D.~Reinel.
+\newblock {Time-dependent density functional theory and the kinetics of lattice
+  gas systems in contact with a wall}.
+\newblock {\em Journal of Chemical Physics}, Vol. 108, No.~7, pp. 3028--3037,
+  1998.
+
+\bibitem{FischerMaassDieterich1997}
+Hans~Peter Fischer, Philipp Maass, and Wolfgang Dieterich.
+\newblock {Novel surface modes in spinodal decomposition}.
+\newblock {\em Physical Review Letters}, Vol.~79, No.~5, pp. 893--896, 1997.
+
+\bibitem{FukaoKenmochi2013}
+Takeshi Fukao and Nobuyuki Kenmochi.
+\newblock {Abstract theory of variational inequalities and Lagrange
+  multipliers}.
+\newblock {\em Discrete and Continuous Dynamical Systems - Series S}, No.
+  SUPPL., pp. 237--246, 2013.
+
+\bibitem{GilardiMiranvilleSchimperna2009}
+Gianni Gilardi, A.~Miranville, and Giulio Schimperna.
+\newblock {On the Cahn-Hilliard equation with irregular potentials and dynamic
+  boundary conditions}.
+\newblock {\em Communications on Pure and Applied Analysis}, Vol.~8, No.~3, pp.
+  881--912, 2009.
+
+\bibitem{GoldsteinMiranvilleSchimperna2011}
+Gisle~Ruiz Goldstein, Alain Miranville, and Giulio Schimperna.
+\newblock {A Cahn-Hilliard model in a domain with non-permeable walls}.
+\newblock {\em Physica D: Nonlinear Phenomena}, Vol. 240, No.~8, pp. 754--766,
+  2011.
+
+\bibitem{GrasselliSchimpernaSegattiZelik2009}
+Maurizio Grasselli, Giulio Schimperna, Antonio Segatti, and Sergey Zelik.
+\newblock {\em {On the 3D Cahn-Hilliard equation with inertial term}}, Vol.~9.
+\newblock 2009.
+
+\bibitem{Gurtin1996}
+Morton~E. Gurtin.
+\newblock {Generalized Ginzburg-Landau and Cahn-Hilliard equations based on a
+  microforce balance}.
+\newblock {\em Physica D: Nonlinear Phenomena}, 1996.
+
+\bibitem{Hintermann1989}
+Thomas Hintermann.
+\newblock {Evolution equations with dynamic boundary conditions}.
+\newblock {\em Proceedings of the Royal Society of Edinburgh: Section A
+  Mathematics}, Vol. 113, No. 1-2, pp. 43--60, 1989.
+
+\bibitem{MiranvilleZelik2004}
+Alain Miranville and Sergey Zelik.
+\newblock {Robust exponential attractors for Cahn-Hilliard type equations with
+  singular potentials}.
+\newblock {\em Mathematical Methods in the Applied Sciences}, Vol.~27, No.~5,
+  pp. 545--582, 2004.
+
+\bibitem{Scarpa2019}
+Luca Scarpa.
+\newblock {Existence and uniqueness of solutions to singular
+  Cahn^^e2^^80^^93Hilliard equations with nonlinear viscosity terms and dynamic
+  boundary conditions}.
+\newblock {\em Journal of Mathematical Analysis and Applications}, Vol. 469,
+  No.~2, pp. 730--764, 2019.
 
 \end{thebibliography}

@@ -2,9 +2,7 @@ This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2020)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: DynamicBC.aux
 The style file: jplain.bst
-I found no \bibdata command---while reading file DynamicBC.aux
-Warning--I didn't find a database entry for "GoldsteinMiranvilleSchimperna2011"
-Warning--I didn't find a database entry for "Scarpa2019"
+Database file #1: references.bib
 Warning--I didn't find a database entry for "ColliFukao2015-CH-AC"
 Warning--I didn't find a database entry for "ColliFGS2015"
 Warning--I didn't find a database entry for "ColliGilardiSprekels2014"
@@ -22,26 +20,16 @@ Warning--I didn't find a database entry for "ColliFukao2014"
 Warning--I didn't find a database entry for "Cahn1961"
 Warning--I didn't find a database entry for "CahnHilliard1958"
 Warning--I didn't find a database entry for "NovickCohen2008"
-Warning--I didn't find a database entry for "FixcherMaassDieterich1997"
-Warning--I didn't find a database entry for "FixcherMaassDieterich1998"
-Warning--I didn't find a database entry for "FischerETAL1998"
-Warning--I didn't find a database entry for "Gurtin1996"
 Warning--I didn't find a database entry for "Aiki1993"
-Warning--I didn't find a database entry for "Aiki1995"
-Warning--I didn't find a database entry for "Aiki1996"
 Warning--I didn't find a database entry for "ColliFukao2015"
-Warning--I didn't find a database entry for "FukaoKenmochi2013"
 Warning--I didn't find a database entry for "KenmochiNiezgodka1996)"
 Warning--I didn't find a database entry for "Kubo2012"
 Warning--I didn't find a database entry for "ColliFS2015"
 Warning--I didn't find a database entry for "ColliGilardiSprekels2016"
 Warning--I didn't find a database entry for "PrussRackeZheng2006"
-Warning--I didn't find a database entry for "MiranvilleZelik2004"
 Warning--I didn't find a database entry for "MiranvilleZelik2008"
 Warning--I didn't find a database entry for "CherfilsMiranvilleZelik2011"
-Warning--I didn't find a database entry for "GilardiMiranvilleSchimperna2009"
 Warning--I didn't find a database entry for "GalGrasselli2008"
-Warning--I didn't find a database entry for "GrasselliSchimpernaSegattiZelik2009"
 Warning--I didn't find a database entry for "CherfilsMiranville2009"
 Warning--I didn't find a database entry for "GilardiMiranvilleSchimperna2010"
 Warning--I didn't find a database entry for "GattiMiranville2006"
@@ -51,7 +39,6 @@ Warning--I didn't find a database entry for "TemamBOOK"
 Warning--I didn't find a database entry for "KenmochiNiezgodkaPawlow1995"
 Warning--I didn't find a database entry for "Escher1993"
 Warning--I didn't find a database entry for "Escher1994"
-Warning--I didn't find a database entry for "Hintermann1989"
 Warning--I didn't find a database entry for "SatoAiki2001"
 Warning--I didn't find a database entry for "ZhengBOOK"
 Warning--I didn't find a database entry for "ChillETAL2006"
@@ -62,46 +49,49 @@ Warning--I didn't find a database entry for "FriedGurtin1993"
 Warning--I didn't find a database entry for "ColliGPS2011"
 Warning--I didn't find a database entry for "PodioGuidguli2006"
 Warning--I didn't find a database entry for "ColliGilardiSprekels2017"
-You've used 0 entries,
+Warning--there's a number but no volume in FukaoKenmochi2013
+Warning--can't use both volume and number fields in GrasselliSchimpernaSegattiZelik2009
+Warning--empty publisher in GrasselliSchimpernaSegattiZelik2009
+You've used 14 entries,
             2620 wiz_defined-function locations,
-            709 strings with 6474 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
+            792 strings with 8983 characters,
+and the built_in function-call counts, 6528 in all, are:
+= -- 588
+> -- 203
+< -- 33
++ -- 84
+- -- 70
+* -- 407
+:= -- 863
+add.period$ -- 42
+call.type$ -- 14
+change.case$ -- 76
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 17
+duplicate$ -- 352
+empty$ -- 520
+format.name$ -- 105
+if$ -- 1505
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 14
+missing$ -- 15
+newline$ -- 73
+num.names$ -- 28
+pop$ -- 98
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 63
 quote$ -- 0
-skip$ -- 1
+skip$ -- 345
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 398
+swap$ -- 130
+text.length$ -- 33
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-is.kanji.str$ -- 0
-(There was 1 error message)
+type$ -- 54
+warning$ -- 3
+while$ -- 61
+width$ -- 16
+write$ -- 153
+is.kanji.str$ -- 164
+(There were 49 warnings)
