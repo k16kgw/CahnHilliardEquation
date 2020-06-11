@@ -11,11 +11,51 @@ Toyohiko Aiki.
   equations with dynamic}.
 \newblock {\em J. Math. Soc. Japan}, Vol.~48, No.~1, pp. 37--59, 1996.
 
+\bibitem{CalatroniColli2013}
+Luca Calatroni and Pierluigi Colli.
+\newblock {Global solution to the Allen-Cahn equation with singular potentials
+  and dynamic boundary conditions}.
+\newblock {\em Nonlinear Analysis, Theory, Methods and Applications}, Vol.~79,
+  No.~1, pp. 12--27, 2013.
+
 \bibitem{ChillFasangovaPruss2006}
 Ralph Chill, Eva Fa{\v{s}}angov{\'{a}}, and Jan Pr{\"{u}}ss.
 \newblock {Convergence to steady states of solutions of the Cahn-Hilliard and
   Caginalp equations with dynamic boundary conditions}.
 \newblock {\em Mathematische Nachrichten}, 2006.
+
+\bibitem{ColliFukao2015}
+Pierluigi Colli and Takeshi Fukao.
+\newblock {Equation and dynamic boundary condition of Cahn-Hilliard type with
+  singular potentials}.
+\newblock {\em Nonlinear Analysis, Theory, Methods and Applications}, Vol. 127,
+  pp. 413--433, 2015.
+
+\bibitem{ColliGilardiSprekels2014}
+Pierluigi Colli, Gianni Gilardi, and J{\"{u}}rgen Sprekels.
+\newblock {On the Cahn-Hilliard equation with dynamic boundary conditions and a
+  dominating boundary potential}.
+\newblock {\em Journal of Mathematical Analysis and Applications}, Vol. 419,
+  No.~2, pp. 972--994, 2014.
+
+\bibitem{ColliGilardiSprekels2016}
+Pierluigi Colli, Gianni Gilardi, and J{\"{u}}rgen Sprekels.
+\newblock {A Boundary Control Problem for the Viscous Cahn^^e2^^80^^93Hilliard
+  Equation with Dynamic Boundary Conditions}.
+\newblock {\em Applied Mathematics and Optimization}, Vol.~73, No.~2, pp.
+  195--225, 2016.
+
+\bibitem{ColliGilardiSprekels2018}
+Pierluigi Colli, Gianni Gilardi, and J{\"{u}}rgen Sprekels.
+\newblock {\em {On a Cahn^^e2^^80^^93Hilliard system with convection and
+  dynamic boundary conditions}}, Vol. 197.
+\newblock Springer Berlin Heidelberg, 2018.
+
+\bibitem{ColliSprekels2015}
+Pierluigi Colli and Jurgen Sprekels.
+\newblock {Optimal control of an Allen^^e2^^80^^93Cahn equation with singular
+  potentials and dynamic boundary conditions}.
+\newblock {\em SIAM J. Control Optim.}, Vol.~53, No.~1, pp. 213--234, 2015.
 
 \bibitem{FischerMaassDieterich1998}
 H.~P. Fischer, P.~Maass, and W.~Dieterich.
@@ -49,6 +89,13 @@ Gianni Gilardi, A.~Miranville, and Giulio Schimperna.
   boundary conditions}.
 \newblock {\em Communications on Pure and Applied Analysis}, Vol.~8, No.~3, pp.
   881--912, 2009.
+
+\bibitem{GilardiMiranvilleSchimperna2010}
+Gianni Gilardi, Alain Miranville, and Giulio Schimperna.
+\newblock {Long Time Behavior of the Cahn-Hilliard Equation with Irregular
+  Potentials and Dynamic Boundary Conditions}.
+\newblock {\em Chinese Annals of Mathematics. Series B}, Vol.~31, No.~5, pp.
+  679--712, 2010.
 
 \bibitem{GoldsteinMiranvilleSchimperna2011}
 Gisle~Ruiz Goldstein, Alain Miranville, and Giulio Schimperna.

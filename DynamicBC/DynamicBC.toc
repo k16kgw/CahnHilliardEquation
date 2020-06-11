@@ -21,6 +21,14 @@
 \contentsline {subsection}{\numberline {2.2}Colli Fukao (2015) \cite {ColliFukao2015-CH-AC} note:null day:2019.10.08}{8}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Colli, Hassan Farshbaf-Shaker, Gilardi, Sprekels (2015) \cite {ColliFGS2015} note:null day:2019.10.10}{10}{subsection.2.3}%
 \contentsline {subsection}{\numberline {2.4}Colli, Gilardi, Sprekels (2014) \cite {ColliGilardiSprekels2014} note:null day:2019.10.14}{11}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}論文情報}{11}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}何に関する論文で何を示したのか}{11}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}先行研究と比べてスゴイこと}{11}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}論文の核となるモノ}{11}{subsubsection.2.4.4}%
+\contentsline {subsubsection}{\numberline {2.4.5}どのような手法で示したのか}{12}{subsubsection.2.4.5}%
+\contentsline {subsubsection}{\numberline {2.4.6}今後の展望や課題}{12}{subsubsection.2.4.6}%
+\contentsline {subsubsection}{\numberline {2.4.7}この論文が引用している主要な先行研究}{12}{subsubsection.2.4.7}%
+\contentsline {subsubsection}{\numberline {2.4.8}この論文を引用している論文}{12}{subsubsection.2.4.8}%
 \contentsline {subsection}{\numberline {2.5}Miranville, Zelik (2009) \cite {MiranvilleZelik2009} note:null day:2019.10.15}{13}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Miranville, Zelik (2005) \cite {MiranvilleZelik2005} note:null day:2019.10.15}{15}{subsection.2.6}%
 \contentsline {subsubsection}{\numberline {2.6.1}論文情報}{15}{subsubsection.2.6.1}%
@@ -45,4 +53,4 @@
 \contentsline {subsection}{\numberline {3.5}Wu (2018) note:null day:2019.10.24}{24}{subsection.3.5}%
 \contentsline {section}{\numberline {4}Nonstandard Cahn--Hilliard 方程式 (Podio-Guidugli type)}{25}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Colli, Gilardi, Sprekels (2018) \cite {ColliGilardiSprekels2018} note:19-4 pp.32-37 day:2019.08.08}{25}{subsection.4.1}%
-\contentsline {section}{\numberline {付録A}有向グラフのサンプル}{26}{appendix.A}%
+\contentsline {section}{\numberline {付録A}有向グラフのサンプル}{27}{appendix.A}%

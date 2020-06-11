@@ -1,5 +1,23 @@
 \documentclass[openary, a4paper, oneside]{jsarticle}
 
+%%%%% 基本設定＞bibのコンパイルはjbibtexで %%%%%
+% // ビルドのレシピ
+% "latex-workshop.latex.recipes": [
+% 	{
+% 			"name": "toolchain",
+% 			"tools": [
+% 					"Step 1: ptex2pdf",
+% 					"Step 1: ptex2pdf",
+% 					//"Step 2: pbibtex",
+% 					"Step 2: jbibtex",
+% 					"Step 3: ptex2pdf",
+% 					"Step 4: ptex2pdf",
+% 			]
+% 	}
+% ],
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \input{../mymacro.tex}
 \input{../VCH2.tex}
 
@@ -467,63 +485,75 @@ Tracking typeコスト汎関数:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \subsection{Colli, Gilardi, Sprekels (2014) \cite{ColliGilardiSprekels2014} note:null day:2019.10.14}
-{\bf 論文情報}：
-Pierluigi Colli, Gianni Gilardi, and Jürgen Sprekels. "On the Cahn–Hilliard equation with dynamic boundary conditions and a dominating boundary potential." Journal of Mathematical Analysis and Applications 419.2 (2014): 972-994.
+	\subsubsection{論文情報}
+	Pierluigi Colli, Gianni Gilardi, and J\"urgen Sprekels. "On the Cahn--Hilliard equation with dynamic boundary conditions and a dominating boundary potential." Journal of Mathematical Analysis and Applications 419.2 (2014): 972--994.	
+	% 著者名, 論文タイトル, 掲載雑誌, 年, ページ.
+	\subsubsection{何に関する論文で何を示したのか}
+	内部ではviscous Cahn--Hilliard方程式又はpure Cahn--Hilliard方程式をみたし，境界ではAllen--Cahn方程式をみたす次の動的境界条件下の初期値問題の解の適切性を示した．
+	非線形項はnonsmooth，singularなものを含めた関数を考える．
+	\begin{equation}\left\{\begin{aligned}
+		&\dt y - \Delta w = 0 \quad\text{in }Q:=\Omega\times(0,T),\\
+		&w = \tau\dt y - \Delta y + \beta(y) + \lambda(x,t)\pi(y) - g \quad \text{in }Q,\\
+		&\dnu w = 0 \quad\text{on }\Sigma:=\Gamma\times(0,T),\\
+		&y\sG = y|\sG \text{ and }\dt y\sG + (\dnu y)|\sG - \Delta\sG y\sG + \beta\sG(y\sG) + \lambda\sG(x,t)\pi\sG(y\sG) = g\sG \quad \text{on }\Sigma,\\
+		&y(0) = y_0 \quad \text{in } \Omega.
+	\end{aligned}\right.\end{equation}
+	解は次のように変分等式によって定める．
+	\begin{itembox}[l]{解の定義}
+		解は次の正則性と変分等式をみたすものとする.
+		\begin{gather}
+			{y \in H^{1}\left(0, T ; V^{*}\right) \cap L^{\infty}(0, T ; V) \cap L^{2}\left(0, T ; H^{2}(\Omega)\right) \text { and } \tau \partial_{t} y \in L^{2}(0, T ; H)} \\ {y_{\Gamma} \in H^{1}\left(0, T ; H_{\Gamma}\right) \cap L^{\infty}\left(0, T ; V_{\Gamma}\right) \cap L^{2}\left(0, T ; H^{2}(\Gamma)\right)} \\ {y_{\Gamma}(t)=\left.y(t)\right|_{\Gamma} \text { for a.a. } t \in(0, T)} \\ {w \in L^{2}(0, T ; V)} \\ {\xi \in L^{2}(0, T ; H) \text { and } \xi \in \beta(y) \text { a.e. in } Q} \\ {\xi_{\Gamma} \in L^{2}\left(0, T ; H_{\Gamma}\right) \quad \text { and } \quad \xi_{\Gamma} \in \beta_{\Gamma}\left(y_{\Gamma}\right) \quad \text { a.e. on } \Sigma}
+		\end{gather}
+		変分等式は
+		\begin{equation}
+			\left\langle\partial_{t} y(t), v\right\rangle +\int_{\Omega} \nabla w(t) \cdot \nabla v=0 \quad \text{for all }v\in V,
+		\end{equation}
+		\begin{equation}\begin{aligned}
+			&\int_{\Omega} w(t) v=\int_{\Omega} \tau \partial_{t} y(t) v+\int_{\Gamma} \partial_{t} y_{\Gamma}(t) v+\int_{\Omega} \nabla y(t) \cdot \nabla v+\int_{\Gamma} \nabla_{\Gamma} y_{\Gamma}(t) \cdot \nabla_{\Gamma} v \\
+			&\quad +\int_{\Omega}(\xi(t)+\lambda(t) \pi(y(t))-g(t)) v+\int_{\Gamma}\left(\xi_{\Gamma}(t)+\lambda_{\Gamma}(t) \pi_{\Gamma}\left(y_{\Gamma}(t)\right)-g_{\Gamma}(t)\right) v \quad\text{for all }v\in \mathcal{V}.
+		\end{aligned}\end{equation}
+	\end{itembox}
+	\subsubsection{先行研究と比べてスゴイこと}
+	同様の非線形項で考察している先行研究としてGilardi, Miranville, Schimperna (2009) \cite{GilardiMiranvilleSchimperna2009}, Gilardi, Miranville, Schimperna (2010) \cite{GilardiMiranvilleSchimperna2010}がある．
+	Gilardi, Miranville, Schimperna (2009) \cite{GilardiMiranvilleSchimperna2009} の結果を改善した．
+	\subsubsection{論文の核となるモノ}
+	非線形項には次の仮定を課す．
+	\begin{itemize}
+		\item[(A1)] (単調項) ((2.3),(2.8)に相当) $\beta$, $\beta\sG$ は $\bbR\times\bbR$ 上の極大単調作用素で $\beta = \partial\hat{\beta}$, $\beta\sG = \partial\hat{\beta}\sG$.
+		$\hat{\beta}$, $\hat{\beta}\sG$ は適正凸下半連続関数, $0 \in \hat{\beta}(0)$, $0 \in \hat{\beta}\sG$.
+		\item[(A2)] (Lipschitz 項) ((2.4)に相当) $\pi$, $\pi\sG:\bbR\to\bbR$ はリプシッツ連続関数
+		\item[(A3)] (線形化部分) ((2.5),(2.7)に相当) $\lambda\in L^{\infty}(Q)$ and $\lambda\sG\in L^{\infty}(\Sigma)$, 特に$\tau=0$のとき, $\lambda\in L^{\infty}(0,T;W^{1,3}(\Omega))$.
+		\item[(A4)] (外力項) $g\in L^2(0,T;H)$ and $g\sG\in L^2(0,T;H\sG)$, 特に$\tau=0$のとき$g\in H^1(0,T;H)$.
+		\item[(A5)] (Compatibility condition，$\beta$の条件・内部と境界の関係) $D(\beta\sG) \subseteq D(\beta)$(これは\cite{GilardiMiranvilleSchimperna2009}と逆無事に注意，要考察)
+		\begin{equation}
+			|\minsec{\beta}(r)| \leq \eta|\minsec{\beta\sG}(r)| + C \text{ for some }\eta, C > 0, \text{ for every }r\in D(\beta\sG).
+		\end{equation} 
+		% \item[(A6)] ($\beta$の条件・内部と境界の関係) $\exists\rho, c_0 > 0$ s.t.
+		% \begin{align}
+		% 	&|s| \leq c_0 (1 + \hat{\beta}(r))\quad\forall r\in\bbR, s\in\beta(r),\\
+		% 	&|s| \leq c_0 (1 + \hat{\beta}\sG(r))\quad\forall r\in\bbR, s\in\beta\sG(r),\\
+		% 	&|\minsec{\beta}(r)| \leq \rho|\minsec{\beta}\sG(r)| + c_0\quad \forall r \in D(\beta\sG).
+		% \end{align}
+		\item[(A6)] (空間平均) $m_0:=(y_0)_{\Omega}$は$D(\beta\sG)$のinteriorに属す.
+	\end{itemize}
+	示した主定理は次の通り
+	{\bf Theorem 2.2}.
+	条件(A1)-(A5)をみたすとき, 初期値$y_{0,1},y_{0,2}\in V$に対する開は初期値と外力項に関して連続依存性を持つ．\\
+	{\bf Theorem 2.3}.
+	条件(A1)-(A7)をみたすとき, $y_0\in \mathcal{V}, \hat{\beta}(y_0)\in \Lone$ and $\hat{\beta}\sG(y_0|\sG)\in L^1(\Gamma)$なる初期値に対して弱開が存在する．\\
+	{\bf Theorem 2.4} and {\bf Theorem 2.6}.
+	付帯条件を更に付けて正則性の向上を図る．
+	\subsubsection{どのような手法で示したのか}
+	Calatroni, Colli (2013) \cite{CalatroniColli2013} がAllen--Cahn方程式の動的境界問題で用いた手法に従う．
+	\subsubsection{今後の展望や課題}
+	この結果をCahn--Hilliard方程式の動的境界問題の最適制御問題に利用することができる．但しAllen--Cahn方程式の動的境界問題の最適制御問題はすでにColli, Sprekels (2015) \cite{ColliSprekels2015} によって研究されている．
+	\subsubsection{この論文が引用している主要な先行研究}
+	Gilardi, Miranville, Schimperna (2009) \cite{GilardiMiranvilleSchimperna2009},
+	Gilardi, Miranville, Schimperna (2010) \cite{GilardiMiranvilleSchimperna2010},
+	Calatroni, Colli (2013) \cite{CalatroniColli2013},
 
-{\bf 主問題}：
-内部ではviscous Cahn--Hilliard方程式又はpure Cahn--Hilliard方程式をみたす次の問題を考える.
-非線形項はnonsmooth, singularなものを含めた関数を考える.
-\begin{equation}\left\{\begin{aligned}
-	&\dt y - \Delta w = 0 \quad\text{in }Q:=\Omega\times(0,T),\\
-	&w = \tau\dt y - \Delta y + \beta(y) + \lambda(x,t)\pi(y) - g \quad \text{in }Q,\\
-	&\dnu w = 0 \quad\text{on }\Sigma:=\Gamma\times(0,T),\\
-	&y\sG = y|\sG \text{ and }\dt y\sG + (\dnu y)|\sG - \Delta\sG y\sG + \beta\sG(y\sG) + \lambda\sG(x,t)\pi\sG(y\sG) = g\sG \quad \text{on }\Sigma,\\
-	&y(0) = y_0 \quad \text{in } \Omega.
-\end{aligned}\right.\end{equation}
+	\subsubsection{この論文を引用している論文}
 
-{\bf 先行結果}：
-
-{\bf 新規性}：
-
-{\bf 主結果}：
-\begin{itembox}[l]{解の定義}
-	開は次の正則性と変分等式をみたすものとする.
-	\begin{gather}
-		{y \in H^{1}\left(0, T ; V^{*}\right) \cap L^{\infty}(0, T ; V) \cap L^{2}\left(0, T ; H^{2}(\Omega)\right) \text { and } \tau \partial_{t} y \in L^{2}(0, T ; H)} \\ {y_{\Gamma} \in H^{1}\left(0, T ; H_{\Gamma}\right) \cap L^{\infty}\left(0, T ; V_{\Gamma}\right) \cap L^{2}\left(0, T ; H^{2}(\Gamma)\right)} \\ {y_{\Gamma}(t)=\left.y(t)\right|_{\Gamma} \text { for a.a. } t \in(0, T)} \\ {w \in L^{2}(0, T ; V)} \\ {\xi \in L^{2}(0, T ; H) \text { and } \xi \in \beta(y) \text { a.e. in } Q} \\ {\xi_{\Gamma} \in L^{2}\left(0, T ; H_{\Gamma}\right) \quad \text { and } \quad \xi_{\Gamma} \in \beta_{\Gamma}\left(y_{\Gamma}\right) \quad \text { a.e. on } \Sigma}
-	\end{gather}
-	変分等式は
-	\begin{equation}
-		\left\langle\partial_{t} y(t), v\right\rangle +\int_{\Omega} \nabla w(t) \cdot \nabla v=0 \quad \text{for all }v\in V,
-	\end{equation}
-	\begin{equation}\begin{aligned}
-		&\int_{\Omega} w(t) v=\int_{\Omega} \tau \partial_{t} y(t) v+\int_{\Gamma} \partial_{t} y_{\Gamma}(t) v+\int_{\Omega} \nabla y(t) \cdot \nabla v+\int_{\Gamma} \nabla_{\Gamma} y_{\Gamma}(t) \cdot \nabla_{\Gamma} v \\
-		&\quad +\int_{\Omega}(\xi(t)+\lambda(t) \pi(y(t))-g(t)) v+\int_{\Gamma}\left(\xi_{\Gamma}(t)+\lambda_{\Gamma}(t) \pi_{\Gamma}\left(y_{\Gamma}(t)\right)-g_{\Gamma}(t)\right) v \quad\text{for all }v\in \mathcal{V}.
-	\end{aligned}\end{equation}
-\end{itembox}
-
-{\bf Theorem 2.2}.
-条件(A1)-(A4)をみたすとき, 初期値$y_{0,1},y_{0,2}\in V$に対する開は初期値と外力項に関して連続依存性を持つ.
-
-{\bf Theorem 2.3}.
-条件(A1)-(A6)をみたすとき, $y_0\in \mathcal{V}, \hat{\beta}(y_0)\in \Lone$ and $\hat{\beta}\sG(y_0|\sG)\in L^1(\Gamma)$なる初期値に対して弱開が存在する.
-
-{\bf Theorem 2.4} and {\bf Theorem 2.6}.
-付帯条件を更に付けて正則性の向上を図る.
-
-\begin{itemize}
-	\item[(A1)] (単調項) ((2.3),(2.8)に相当) $\beta$, $\beta\sG$ は $\bbR\times\bbR$ 上の極大単調作用素で $\beta = \partial\hat{\beta}$, $\beta\sG = \partial\hat{\beta}\sG$.
-	$\hat{\beta}$, $\hat{\beta}\sG$ は適正凸下半連続関数, $0 \in \hat{\beta}(0)$, $0 \in \hat{\beta}\sG$.
-	\item[(A2)] (Lipschitz 項) ((2.4)に相当) $\pi$, $\pi\sG:\bbR\to\bbR$ はリプシッツ連続関数
-	\item[(A3)] (時空間に陽に依存する部分) ((2.5),(2.7)に相当) $\lambda\in L^{\infty}(Q)$ and $\lambda\sG\in L^{\infty}(\Sigma)$, 特に$\tau=0$のとき, $\lambda\in L^{\infty}(0,T;W^{1,3}(\Omega))$.
-	\item[(A4)] (外力項) $g\in L^2(0,T;H)$ and $g\sG\in L^2(0,T;H\sG)$, 特に$\tau=0$のとき$g\in H^1(0,T;H)$.
-	\item[(A5)] ($\beta$の条件・内部と境界の関係) $\exists\rho, c_0 > 0$ s.t.
-	\begin{align}
-		&|s| \leq c_0 (1 + \hat{\beta}(r))\quad\forall r\in\bbR, s\in\beta(r),\\
-		&|s| \leq c_0 (1 + \hat{\beta}\sG(r))\quad\forall r\in\bbR, s\in\beta\sG(r),\\
-		&|\minsec{\beta}(r)| \leq \rho|\minsec{\beta}\sG(r)| + c_0\quad \forall r \in D(\beta\sG).
-	\end{align}
-	\item[(A6)] (空間平均) $m_0:=(y_0)_{\Omega}$は$D(\beta\sG)$のinteriorに属す.
-\end{itemize}
 
 {\bf 戦略}：
 
