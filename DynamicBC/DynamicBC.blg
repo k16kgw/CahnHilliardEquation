@@ -1,0 +1,93 @@
+This is pBibTeX, Version 0.99d-j0.33 (utf8.euc) (TeX Live 2020)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: DynamicBC.aux
+The style file: jplain.bst
+Database file #1: references.bib
+Repeated entry---line 1231 of file references.bib
+ : @article{ColliGilardiSprekels2018
+ :                                  ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "MiranvilleZelik2009"
+Warning--I didn't find a database entry for "MiranvilleZelik2005"
+Warning--I didn't find a database entry for "RackeZheng2003"
+Warning--I didn't find a database entry for "ColliFukaoWu2020"
+Warning--I didn't find a database entry for "LiuWu2019"
+Warning--I didn't find a database entry for "GarckeKnopf2018"
+Warning--I didn't find a database entry for "Wu2018"
+Warning--I didn't find a database entry for "KnopfLam2019"
+Warning--I didn't find a database entry for "Cahn1961"
+Warning--I didn't find a database entry for "CahnHilliard1958"
+Warning--I didn't find a database entry for "NovickCohen2008"
+Warning--I didn't find a database entry for "Aiki1993"
+Warning--I didn't find a database entry for "ColliFukao2015"
+Warning--I didn't find a database entry for "KenmochiNiezgodka1996)"
+Warning--I didn't find a database entry for "Kubo2012"
+Warning--I didn't find a database entry for "ColliFS2015"
+Warning--I didn't find a database entry for "PrussRackeZheng2006"
+Warning--I didn't find a database entry for "MiranvilleZelik2008"
+Warning--I didn't find a database entry for "CherfilsMiranvilleZelik2011"
+Warning--I didn't find a database entry for "GalGrasselli2008"
+Warning--I didn't find a database entry for "CherfilsMiranville2009"
+Warning--I didn't find a database entry for "GattiMiranville2006"
+Warning--I didn't find a database entry for "ElliottZheng1986"
+Warning--I didn't find a database entry for "Zheng1986"
+Warning--I didn't find a database entry for "TemamBOOK"
+Warning--I didn't find a database entry for "Escher1993"
+Warning--I didn't find a database entry for "Escher1994"
+Warning--I didn't find a database entry for "SatoAiki2001"
+Warning--I didn't find a database entry for "ZhengBOOK"
+Warning--I didn't find a database entry for "ChillETAL2006"
+Warning--I didn't find a database entry for "WuZheng2004"
+Warning--I didn't find a database entry for "QinBOOK"
+Warning--I didn't find a database entry for "PodioGuidugli2006"
+Warning--I didn't find a database entry for "FriedGurtin1993"
+Warning--I didn't find a database entry for "ColliGPS2011"
+Warning--I didn't find a database entry for "PodioGuidguli2006"
+Warning--I didn't find a database entry for "ColliGilardiSprekels2017"
+Warning--can't use both volume and number fields in ColliGilardiSprekels2018
+Warning--there's a number but no volume in FukaoKenmochi2013
+Warning--can't use both volume and number fields in GrasselliSchimpernaSegattiZelik2009
+Warning--empty publisher in GrasselliSchimpernaSegattiZelik2009
+You've used 24 entries,
+            2620 wiz_defined-function locations,
+            843 strings with 10860 characters,
+and the built_in function-call counts, 11700 in all, are:
+= -- 1073
+> -- 358
+< -- 60
++ -- 148
+- -- 124
+* -- 734
+:= -- 1518
+add.period$ -- 72
+call.type$ -- 24
+change.case$ -- 132
+chr.to.int$ -- 0
+cite$ -- 28
+duplicate$ -- 628
+empty$ -- 926
+format.name$ -- 186
+if$ -- 2718
+int.to.chr$ -- 0
+int.to.str$ -- 24
+missing$ -- 26
+newline$ -- 123
+num.names$ -- 48
+pop$ -- 169
+preamble$ -- 1
+purify$ -- 110
+quote$ -- 0
+skip$ -- 622
+stack$ -- 0
+substring$ -- 760
+swap$ -- 246
+text.length$ -- 60
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 92
+warning$ -- 4
+while$ -- 108
+width$ -- 26
+write$ -- 263
+is.kanji.str$ -- 289
+(There was 1 error message)

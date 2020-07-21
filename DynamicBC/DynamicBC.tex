@@ -578,16 +578,82 @@ Tracking typeコスト汎関数:
 		u(0)=u_{0} \quad \text { in } \Omega
 		\end{array}
 	\end{equation}
+	解は変分等式で定義する．
+	\begin{itembox}[l]{解の定義}
+		正則性は次の通り．
+		\begin{equation}\begin{aligned}
+			& u \in L^{\infty}(0, T ; V) \cap H^{1}\left(0, T ; V^{*}\right)\text{ and }\tau \partial_{t} u \in L^{2}(0, T ; H)\\
+			& v:=\left.u\right|_{\Gamma} \in L^{\infty}\left(0, T ; V_{\Gamma}\right) \cap H^{1}\left(0, T ; H_{\Gamma}\right)\\
+			& w \in L^{2}(0, T ; V)\\
+			& \xi \in L^{2}(0, T ; H)\text{ and }\xi \in \beta(u)\text{ a.e. in }Q\ \xi_{\Gamma} \in L^{2}\left(0, T ; H_{\Gamma}\right)\text{ and }\xi_{\Gamma} \in \beta_{\Gamma}(v)\text{ a.e. on }\Sigma
+			& u(0)=u_{0}
+		\end{aligned}\end{equation}
+		変分等式は次の通り．
+		\begin{equation}\begin{aligned}
+			& \left\langle\partial_{t} u(t), z\right\rangle+\int_{\Omega} \nabla w(t) \cdot \nabla z=0\\
+			& \int_{\Omega} w(t) z=\int_{\Omega} \tau \partial_{t} u(t) z+\int_{\Gamma} \partial_{t} v(t) z+\int_{\Omega} \nabla u(t) \cdot \nabla z+\int_{\Gamma} \nu \nabla_{\Gamma} v(t) \cdot \nabla_{\Gamma} z\\
+			& \quad +\int_{\Omega}(\xi(t)+\pi(u(t))-f(t)) z+\int_{\Gamma}\left(\xi_{\Gamma}(t)+\pi_{\Gamma}(v(t))-f_{\Gamma}(t)\right) z. 
+		\end{aligned}\end{equation}
+	\end{itembox}
 	\subsubsection{先行研究と比べてスゴイこと}
 	標準的でない非線形項を扱っている．特に$\pi, \pi\sG$はリプシッツ連続であり，$\beta, \beta\sG$は凸関数の劣微分である．
 	この設定は従来のCahn--Hilliard方程式で従来の境界条件（Neumann）でKenmochi, Niezg\'odka, Pawlow (1995) \cite{KenmochiNiezgodkaPawlow1995} によって調べられている．
 	\subsubsection{論文の核となるモノ}
+	非線形項や外力項，初期値は次のように仮定する．
+	\begin{equation}\begin{array}{l}
+		\widehat{\beta}, \widehat{\beta}_{\Gamma}: \mathbb{R} \rightarrow[0,+\infty]\text{ are convex, proper, l.s.c., and }\widehat{\beta}(0)=\widehat{\beta}_{\Gamma}(0)=0\\
+		\pi\text{ and }\pi_{\Gamma}\text{ are Lipschitz continuous}\\
+		\tau, \nu \geq 0\\
+		\beta:=\partial \widehat{\beta} \quad \text { and } \quad \beta_{\Gamma}:=\partial \widehat{\beta}_{\Gamma}
+	\end{array}\end{equation}
+	{\bf Theorem 1}.（解の一意性）
+	このとき解は一意である．\par
+	更に次の仮定をおく．外力項や初期値は
+	\begin{align}
+		f \in H^{1}(0, T ; H) \text { and } f_{\Gamma} \in H^{1}\left(0, T ; H_{\Gamma}\right) \cap L^{\infty}(\Sigma) \\
+		u_{0} \in H^{2}(\Omega) \text { and } \partial_{n} u_{0}=0 \\
+		\left.\nu u_{0}\right|_{\Gamma} \in H^{2}(\Gamma) \\
+		\widehat{\beta}\left(u_{0}\right) \in L^{1}(\Omega), \quad \widehat{\beta}\left(\left.u_{0}\right|_{\Gamma}\right) \in L^{1}(\Gamma), \text { and } \widehat{\beta}_{\Gamma}\left(\left.u_{0}\right|_{\Gamma}\right) \in L^{1}(\Gamma)\\
+		\beta^{\circ}\left(u_{0}\right) \in H \quad \text { and } \quad \beta_{\Gamma}^{\circ}\left(\left.u_{0}\right|_{\Gamma}\right) \in H_{\Gamma}\\
+		-\Delta u_{0}+\beta_{c}^{Y}\left(u_{0}\right)-f(0)\text{ is bounded in }V\text{ as }\varepsilon \rightarrow 0^{+}\text{ if }\tau=0
+	\end{align}
+	非線形項については
+	\begin{align}
+		D\left(\beta_{\Gamma}\right) \supseteq D(\beta) \quad \text { and } \quad \beta_{\Gamma}(0)=\{0\}
+	\end{align}
+	定数は次のように与えられる．
+	\begin{align}
+		\alpha>0, C_{\Gamma} \geq 0, \quad \sigma \in(0,1), \quad L_{\Gamma}>\sup \left|\pi_{\Gamma}^{\prime}\right| \\
+		\text { and } M_{\Gamma}>\left|\pi_{\Gamma}(0)\right|+\left\|f_{\Gamma}\right\|_{L^{\infty}(\Sigma)}\\
+		r_{-} \leq 0 \leq r_{+}\text{ and }r_{\pm}\text{ belong to the interior of }D(\beta)\\
+		\left|\beta^{\circ}(r)\right| \geq \alpha\left|\beta_{\Gamma}^{\circ}(r)\right|-C_{\Gamma} \quad \text { for every } r \in D(\beta) \\
+		\sigma\left|\beta_{\Gamma}^{\circ}(r)\right| \geq L_{\Gamma}|r|+M_{\Gamma} \quad \text { for every } r \in D\left(\beta_{\Gamma}\right) \backslash\left(r_{-}, r_{+}\right)			
+	\end{align}
+	{\bf Theorem 2}.（解の存在）
+	このとき解は存在する．\\
+	{\bf Theorem 3}.（解の存在）一方でTheorem 1 と同じ条件の下で特に次の場合を考える．
+	\begin{align}
+		D(\beta) = D(\beta\sG) = \mathbb{R}
+	\end{align}
+	更に次の条件を課す．$d=1,2$のとき
+	\begin{equation}\begin{aligned}
+		&\beta^{\circ}(r)=O\left(|r|^{p}\right) \text { as }|r| \rightarrow+\infty, \text { for some } p \geq 1 \quad \text { and }\\
+		&\text { either } \nu>0 \text { or } \beta_{\Gamma}^{\circ}(r)=O\left(|r|^{q}\right) \text { as }|r| \rightarrow+\infty, \text { for some } q \geq 1
+	\end{aligned}\end{equation}	
+	$d=3$のとき
+	\begin{equation}\begin{aligned}
+		&\beta^{\circ}(r)=O\left(|r|^{3}\right) \quad \text { and } \quad \beta_{\Gamma}^{\circ}(r)=O\left(|r|^{q}\right) \quad \text { as }|r| \rightarrow+\infty, \quad \text { for some } q \text { with }\\
+		&q \geq 1 \quad \text { if } \nu>0 \quad \text { and } \quad q \in[1,2] \quad \text { if } \nu=0.
+	\end{aligned}\end{equation}
+	このとき解は存在する．
 	\subsubsection{どのような手法で示したのか}
+	Theorem 1 の証明は，空間平均が0になるソボレフ空間での双対写像を導入し，変分等式を1本で書き直し，2つの解を仮定して誤差評価を行った．
+	Theorem 2 の証明は，まず非線形項の極大単調項を吉田近似で近似し，次に空間に関してGalerkin法によって離散化を行って有限次元の常微分方程式の初期値問題に帰着した．
+	非線形項がリプシッツ連続な近似問題の解の存在は常微分方程式の基本定理で保証されるため，この近似解について空間の刻みに依存しないアプリオリ評価を得て，極限移行し，続いて近似パラメタに依存しないアプリオリ評価を得て，極限移行によって元の問題の解の存在を示した．
 	\subsubsection{今後の展望や課題}
 	\subsubsection{この論文が引用している主要な先行研究}
+	Kenmochi, Niezg\'odka, Pawlow (1995) \cite{KenmochiNiezgodkaPawlow1995}.
 	\subsubsection{この論文を引用している論文}
-	
-
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

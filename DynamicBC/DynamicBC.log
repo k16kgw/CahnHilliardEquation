@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.euc) (TeX Live 2020) (preloaded format=platex 2020.4.13)  21 JUL 2020 13:16
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.euc) (TeX Live 2020) (preloaded format=platex 2020.4.13)  21 JUL 2020 15:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -742,35 +742,17 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 4.805pt on input line 2.
 LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <10> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 10.
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 10.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 10.
+(Font)              scaled to size 9.60999pt on input line 41.
 LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <10> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 10.
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 10.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 41.
 LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 9.60999pt on input line 10.
-
-
-LaTeX Warning: Citation `GoldsteinMiranvilleSchimperna2011' on page 1 undefined on input line 10.
-
-
-LaTeX Warning: Citation `Scarpa2019' on page 1 undefined on input line 20.
-
-
-LaTeX Warning: Citation `ColliFukao2015JMAA' on page 1 undefined on input line 21.
-
-
-LaTeX Warning: Citation `ColliFarshbaf-ShakerGilardiSprekels2015' on page 1 undefined on input line 22.
-
-
-LaTeX Warning: Citation `ColliGilardiSprekels2014' on page 1 undefined on input line 23.
-
-
-LaTeX Warning: Citation `GilardiMiranvilleSchimperna2009' on page 1 undefined on input line 32.
+(Font)              scaled to size 9.60999pt on input line 41.
 
 
 LaTeX Warning: Citation `MiranvilleZelik2009' on page 1 undefined on input line 41.
@@ -787,9 +769,6 @@ LaTeX Warning: Citation `ColliFukaoWu2020' on page 1 undefined on input line 58.
 
 LaTeX Warning: Citation `LiuWu2019' on page 1 undefined on input line 60.
 
-
-LaTeX Warning: Citation `ColliGilardiSprekels2018' on page 1 undefined on input line 64.
-
 )
 \tf@toc=\write8
 \openout8 = `DynamicBC.toc'.
@@ -799,14 +778,7 @@ LaTeX Warning: Citation `ColliGilardiSprekels2018' on page 1 undefined on input 
 ]
 LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 38.
-
-
-LaTeX Warning: Citation `Scarpa2019' on page 2 undefined on input line 72.
-
-
-LaTeX Warning: Citation `ColliFukao2015JMAA' on page 2 undefined on input line 73.
-
-[2]
+ [2]
 
 LaTeX Warning: Citation `GarckeKnopf2018' on page 3 undefined on input line 95.
 
@@ -827,39 +799,10 @@ LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 6.72699pt on input line 122.
 LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
 (Font)              scaled to size 4.805pt on input line 122.
- [4]
-
-LaTeX Warning: Citation `ColliFukao2015MMAS' on page 5 undefined on input line 177.
-
-[5]
-LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
-(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 219.
-LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 219.
-LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 219.
-LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
-(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 219.
-LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 219.
-LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
-(Font)              scaled to size 11.53198pt on input line 219.
-
-
-LaTeX Warning: Citation `GoldsteinMiranvilleSchimperna2011' on page 6 undefined on input line 219.
-
+ [4] [5]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 219.
-
-
-LaTeX Warning: Citation `FischerMaassDieterich1997' on page 6 undefined on input line 241.
-
-
-LaTeX Warning: Citation `FischerMaassDieterich1998' on page 6 undefined on input line 241.
-
-
-LaTeX Warning: Citation `FischerReinhardDietrichETAL1998' on page 6 undefined on input line 241.
 
 
 LaTeX Warning: Citation `Cahn1961' on page 6 undefined on input line 246.
@@ -870,24 +813,12 @@ LaTeX Warning: Citation `CahnHilliard1958' on page 6 undefined on input line 246
 
 LaTeX Warning: Citation `NovickCohen2008' on page 6 undefined on input line 246.
 
-
-LaTeX Warning: Citation `ChillFasangovaPruss2006' on page 6 undefined on input line 251.
-
 [6]
-
-LaTeX Warning: Citation `Scarpa2019' on page 7 undefined on input line 266.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 266.
 
-
-LaTeX Warning: Citation `Gurtin1996' on page 7 undefined on input line 282.
-
 [7]
-
-LaTeX Warning: Citation `ColliFukao2015JMAA' on page 8 undefined on input line 317.
-
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 317.
@@ -896,16 +827,7 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 LaTeX Warning: Citation `Aiki1993' on page 8 undefined on input line 341.
 
 
-LaTeX Warning: Citation `Aiki1995' on page 8 undefined on input line 341.
-
-
-LaTeX Warning: Citation `Aiki1996' on page 8 undefined on input line 341.
-
-
 LaTeX Warning: Citation `ColliFukao2015' on page 8 undefined on input line 342.
-
-
-LaTeX Warning: Citation `FukaoKenmochi2013' on page 8 undefined on input line 344.
 
 
 LaTeX Warning: Citation `KenmochiNiezgodka1996)' on page 8 undefined on input line 345.
@@ -913,14 +835,7 @@ LaTeX Warning: Citation `KenmochiNiezgodka1996)' on page 8 undefined on input li
 
 LaTeX Warning: Citation `Kubo2012' on page 8 undefined on input line 345.
 
-[8]
-
-LaTeX Warning: Citation `FukaoKenmochi2013' on page 9 undefined on input line 409.
-
-[9]
-
-LaTeX Warning: Citation `ColliFarshbaf-ShakerGilardiSprekels2015' on page 10 undefined on input line 421.
-
+[8] [9]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 421.
@@ -928,278 +843,216 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 LaTeX Warning: Citation `ColliFS2015' on page 10 undefined on input line 430.
 
-
-LaTeX Warning: Citation `ColliGilardiSprekels2016' on page 10 undefined on input line 431.
-
 LaTeX Font Info:    Trying to load font information for U+eus on input line 452.
 (/usr/local/texlive/2020/texmf-dist/tex/latex/amsfonts/ueus.fd
 File: ueus.fd 2013/01/14 v3.01 Euler Script
 ) [10]
 
-LaTeX Warning: Citation `ColliGilardiSprekels2014' on page 11 undefined on input line 487.
-
-
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 487.
 
-
-LaTeX Warning: Citation `GilardiMiranvilleSchimperna2009' on page 11 undefined on input line 517.
-
-
-LaTeX Warning: Citation `GilardiMiranvilleSchimperna2010' on page 11 undefined on input line 517.
-
-
-LaTeX Warning: Citation `GilardiMiranvilleSchimperna2009' on page 11 undefined on input line 518.
-
-
-LaTeX Warning: Citation `GilardiMiranvilleSchimperna2009' on page 11 undefined on input line 527.
-
-[11]
-
-LaTeX Warning: Citation `CalatroniColli2013' on page 12 undefined on input line 547.
-
-
-LaTeX Warning: Citation `GilardiMiranvilleSchimperna2009' on page 12 undefined on input line 548.
-
-
-LaTeX Warning: Citation `GilardiMiranvilleSchimperna2009' on page 12 undefined on input line 549.
-
-
-LaTeX Warning: Citation `ColliSprekels2015' on page 12 undefined on input line 553.
-
-
-LaTeX Warning: Citation `GilardiMiranvilleSchimperna2009' on page 12 undefined on input line 555.
-
-
-LaTeX Warning: Citation `GilardiMiranvilleSchimperna2010' on page 12 undefined on input line 556.
-
-
-LaTeX Warning: Citation `CalatroniColli2013' on page 12 undefined on input line 557.
-
-[12]
-
-LaTeX Warning: Citation `GilardiMiranvilleSchimperna2009' on page 13 undefined on input line 566.
-
+[11] [12]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\@ifnextchar' on input line 566.
 
+[13] [14]
+LaTeX Font Info:    Font shape `JT1/mc/b/n' in size <12> not available
+(Font)              Font shape `JT1/mc/bx/n' tried instead on input line 663.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 663.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 663.
+LaTeX Font Info:    Font shape `JY1/mc/b/n' in size <12> not available
+(Font)              Font shape `JY1/mc/bx/n' tried instead on input line 663.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 663.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 11.53198pt on input line 663.
 
-LaTeX Warning: Citation `KenmochiNiezgodkaPawlow1995' on page 13 undefined on input line 583.
 
-[13]
-
-LaTeX Warning: Citation `MiranvilleZelik2009' on page 14 undefined on input line 597.
+LaTeX Warning: Citation `MiranvilleZelik2009' on page 15 undefined on input line 663.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 597.
+(hyperref)                removing `\@ifnextchar' on input line 663.
 
-[14] [15]
+[15] [16]
 
-LaTeX Warning: Citation `MiranvilleZelik2005' on page 16 undefined on input line 697.
+LaTeX Warning: Citation `MiranvilleZelik2005' on page 17 undefined on input line 763.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 697.
+(hyperref)                removing `\@ifnextchar' on input line 763.
 
 
-LaTeX Warning: Citation `RackeZheng2003' on page 16 undefined on input line 751.
+LaTeX Warning: Citation `RackeZheng2003' on page 17 undefined on input line 817.
 
 
-LaTeX Warning: Citation `PrussRackeZheng2006' on page 16 undefined on input line 752.
-
-[16]
-
-LaTeX Warning: Citation `MiranvilleZelik2004' on page 17 undefined on input line 758.
-
-
-LaTeX Warning: Citation `RackeZheng2003' on page 17 undefined on input line 761.
-
-
-LaTeX Warning: Citation `PrussRackeZheng2006' on page 17 undefined on input line 761.
-
-
-LaTeX Warning: Citation `MiranvilleZelik2008' on page 17 undefined on input line 763.
-
-
-LaTeX Warning: Citation `CherfilsMiranvilleZelik2011' on page 17 undefined on input line 764.
-
-
-LaTeX Warning: Citation `GilardiMiranvilleSchimperna2009' on page 17 undefined on input line 765.
-
-
-LaTeX Warning: Citation `GalGrasselli2008' on page 17 undefined on input line 766.
-
-
-LaTeX Warning: Citation `GrasselliSchimpernaSegattiZelik2009' on page 17 undefined on input line 767.
-
-
-LaTeX Warning: Citation `MiranvilleZelik2009' on page 17 undefined on input line 768.
-
-
-LaTeX Warning: Citation `CherfilsMiranville2009' on page 17 undefined on input line 769.
-
-
-LaTeX Warning: Citation `GilardiMiranvilleSchimperna2010' on page 17 undefined on input line 770.
-
-
-LaTeX Warning: Citation `GattiMiranville2006' on page 17 undefined on input line 771.
+LaTeX Warning: Citation `PrussRackeZheng2006' on page 17 undefined on input line 818.
 
 [17]
 
-LaTeX Warning: Citation `RackeZheng2003' on page 18 undefined on input line 777.
+LaTeX Warning: Citation `RackeZheng2003' on page 18 undefined on input line 827.
 
 
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 777.
+LaTeX Warning: Citation `PrussRackeZheng2006' on page 18 undefined on input line 827.
 
 
-LaTeX Warning: Citation `ElliottZheng1986' on page 18 undefined on input line 798.
+LaTeX Warning: Citation `MiranvilleZelik2008' on page 18 undefined on input line 829.
 
 
-LaTeX Warning: Citation `Zheng1986' on page 18 undefined on input line 798.
+LaTeX Warning: Citation `CherfilsMiranvilleZelik2011' on page 18 undefined on input line 830.
 
 
-LaTeX Warning: Citation `TemamBOOK' on page 18 undefined on input line 798.
+LaTeX Warning: Citation `GalGrasselli2008' on page 18 undefined on input line 832.
 
 
-LaTeX Warning: Citation `KenmochiNiezgodkaPawlow1995' on page 18 undefined on input line 798.
+LaTeX Warning: Citation `MiranvilleZelik2009' on page 18 undefined on input line 834.
 
 
-LaTeX Warning: Citation `Escher1993' on page 18 undefined on input line 801.
+LaTeX Warning: Citation `CherfilsMiranville2009' on page 18 undefined on input line 835.
 
 
-LaTeX Warning: Citation `Escher1994' on page 18 undefined on input line 801.
-
-
-LaTeX Warning: Citation `Hintermann1989' on page 18 undefined on input line 801.
-
-
-LaTeX Warning: Citation `SatoAiki2001' on page 18 undefined on input line 806.
-
-
-LaTeX Warning: Citation `ElliottZheng1986' on page 18 undefined on input line 808.
-
-
-LaTeX Warning: Citation `Zheng1986' on page 18 undefined on input line 808.
-
-
-LaTeX Warning: Citation `TemamBOOK' on page 18 undefined on input line 808.
-
-
-LaTeX Warning: Citation `KenmochiNiezgodkaPawlow1995' on page 18 undefined on input line 808.
-
-
-LaTeX Warning: Citation `Escher1993' on page 18 undefined on input line 808.
-
-
-LaTeX Warning: Citation `Escher1994' on page 18 undefined on input line 808.
-
-
-LaTeX Warning: Citation `Hintermann1989' on page 18 undefined on input line 808.
-
-
-LaTeX Warning: Citation `SatoAiki2001' on page 18 undefined on input line 808.
-
-
-LaTeX Warning: Citation `ZhengBOOK' on page 18 undefined on input line 810.
-
-
-LaTeX Warning: Citation `ChillETAL2006' on page 18 undefined on input line 810.
-
-
-LaTeX Warning: Citation `CherfilsMiranvilleZelik2011' on page 18 undefined on input line 810.
-
-
-LaTeX Warning: Citation `WuZheng2004' on page 18 undefined on input line 810.
-
-
-LaTeX Warning: Citation `MiranvilleZelik2005' on page 18 undefined on input line 810.
-
-
-LaTeX Warning: Citation `QinBOOK' on page 18 undefined on input line 810.
-
-
-LaTeX Warning: Citation `GilardiMiranvilleSchimperna2009' on page 18 undefined on input line 810.
-
-
-LaTeX Warning: Citation `PrussRackeZheng2006' on page 18 undefined on input line 810.
-
-
-LaTeX Warning: Citation `GalGrasselli2008' on page 18 undefined on input line 810.
-
-
-LaTeX Warning: Citation `GrasselliSchimpernaSegattiZelik2009' on page 18 undefined on input line 810.
+LaTeX Warning: Citation `GattiMiranville2006' on page 18 undefined on input line 837.
 
 [18]
 
-LaTeX Warning: Citation `ColliFukaoWu2020' on page 19 undefined on input line 821.
+LaTeX Warning: Citation `RackeZheng2003' on page 19 undefined on input line 843.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 821.
+(hyperref)                removing `\@ifnextchar' on input line 843.
 
-[19] [20]
 
-LaTeX Warning: Citation `LiuWu2019' on page 21 undefined on input line 873.
+LaTeX Warning: Citation `ElliottZheng1986' on page 19 undefined on input line 864.
+
+
+LaTeX Warning: Citation `Zheng1986' on page 19 undefined on input line 864.
+
+
+LaTeX Warning: Citation `TemamBOOK' on page 19 undefined on input line 864.
+
+
+LaTeX Warning: Citation `Escher1993' on page 19 undefined on input line 867.
+
+
+LaTeX Warning: Citation `Escher1994' on page 19 undefined on input line 867.
+
+
+LaTeX Warning: Citation `SatoAiki2001' on page 19 undefined on input line 872.
+
+
+LaTeX Warning: Citation `ElliottZheng1986' on page 19 undefined on input line 874.
+
+
+LaTeX Warning: Citation `Zheng1986' on page 19 undefined on input line 874.
+
+
+LaTeX Warning: Citation `TemamBOOK' on page 19 undefined on input line 874.
+
+
+LaTeX Warning: Citation `Escher1993' on page 19 undefined on input line 874.
+
+
+LaTeX Warning: Citation `Escher1994' on page 19 undefined on input line 874.
+
+
+LaTeX Warning: Citation `SatoAiki2001' on page 19 undefined on input line 874.
+
+
+LaTeX Warning: Citation `ZhengBOOK' on page 19 undefined on input line 876.
+
+
+LaTeX Warning: Citation `ChillETAL2006' on page 19 undefined on input line 876.
+
+
+LaTeX Warning: Citation `CherfilsMiranvilleZelik2011' on page 19 undefined on input line 876.
+
+
+LaTeX Warning: Citation `WuZheng2004' on page 19 undefined on input line 876.
+
+
+LaTeX Warning: Citation `MiranvilleZelik2005' on page 19 undefined on input line 876.
+
+
+LaTeX Warning: Citation `QinBOOK' on page 19 undefined on input line 876.
+
+
+LaTeX Warning: Citation `PrussRackeZheng2006' on page 19 undefined on input line 876.
+
+
+LaTeX Warning: Citation `GalGrasselli2008' on page 19 undefined on input line 876.
+
+[19]
+
+LaTeX Warning: Citation `ColliFukaoWu2020' on page 20 undefined on input line 887.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 873.
+(hyperref)                removing `\@ifnextchar' on input line 887.
 
-[21] [22] [23] [24] [25]
+[20] [21]
 
-LaTeX Warning: Citation `ColliGilardiSprekels2018' on page 26 undefined on input line 1067.
+LaTeX Warning: Citation `LiuWu2019' on page 22 undefined on input line 939.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@ifnextchar' on input line 1067.
+(hyperref)                removing `\@ifnextchar' on input line 939.
+
+[22] [23] [24] [25] [26]
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\@ifnextchar' on input line 1133.
 
 
-LaTeX Warning: Citation `PodioGuidugli2006' on page 26 undefined on input line 1072.
+LaTeX Warning: Citation `PodioGuidugli2006' on page 27 undefined on input line 1138.
 
 
-LaTeX Warning: Citation `PodioGuidugli2006' on page 26 undefined on input line 1085.
+LaTeX Warning: Citation `PodioGuidugli2006' on page 27 undefined on input line 1151.
 
 
-LaTeX Warning: Citation `FriedGurtin1993' on page 26 undefined on input line 1090.
+LaTeX Warning: Citation `FriedGurtin1993' on page 27 undefined on input line 1156.
 
 
-LaTeX Warning: Citation `Gurtin1996' on page 26 undefined on input line 1090.
+LaTeX Warning: Citation `ColliGPS2011' on page 27 undefined on input line 1157.
 
 
-LaTeX Warning: Citation `ColliGPS2011' on page 26 undefined on input line 1091.
+LaTeX Warning: Citation `PodioGuidguli2006' on page 27 undefined on input line 1157.
 
 
-LaTeX Warning: Citation `PodioGuidguli2006' on page 26 undefined on input line 1091.
+LaTeX Warning: Citation `ColliGilardiSprekels2017' on page 27 undefined on input line 1187.
 
-
-LaTeX Warning: Citation `ColliGilardiSprekels2017' on page 26 undefined on input line 1121.
-
-[26]
-No file DynamicBC.bbl.
-[27]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1289.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1289.
+[27] (./DynamicBC.bbl
+LaTeX Font Info:    Font shape `JT1/gt/m/it' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `JT1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 6.
+LaTeX Font Info:    Font shape `JY1/gt/m/it' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 6.
+LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
+(Font)              scaled to size 9.60999pt on input line 6.
+ [28]) [29]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1355.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1355.
  (./DynamicBC.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1289.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1289.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1355.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1355.
 Package rerunfilecheck Info: File `DynamicBC.out' has not changed.
 (rerunfilecheck)             Checksum: 7A951928F03DFF16395CF06F5501BE61;2944.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1289.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1355.
  ) 
 Here is how much of TeX's memory you used:
- 20652 strings out of 481118
- 360128 string characters out of 5916929
- 661464 words of memory out of 5000000
- 36228 multiletter control sequences out of 15000+600000
- 564582 words of font info for 147 fonts, out of 8000000 for 9000
+ 20682 strings out of 481118
+ 360782 string characters out of 5916929
+ 662536 words of memory out of 5000000
+ 36255 multiletter control sequences out of 15000+600000
+ 565268 words of font info for 148 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  63i,14n,62p,681b,669s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on DynamicBC.dvi (27 pages, 151352 bytes).
+Output written on DynamicBC.dvi (29 pages, 175752 bytes).
