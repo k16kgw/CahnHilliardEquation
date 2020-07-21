@@ -46,14 +46,14 @@
 \end{itemize}
 内部でCahn--Hilliard方程式をみたし, 境界で混合型の動的境界条件をみたす問題の各論文間の関係（引用被引用関係）\\
 
-\begin{tikzpicture}[every node/.style={rectangle,fill=cyan!30,rounded corners}]
-    \node (GMS) {Goldstein, Miranville, Schimperna (2011) \cite{GoldsteinMiranvilleSchimperna2011}};
-    \node[above right=of GMS] (CF) {Colli, Fukao (2015) \cite{ColliFukao2015-GMS}};
-	\node[above left=of CF] (CGS) {Colli, Gilardi, Sprekels (2018) \cite{ColliGilardiSprekels2018}};
+% \begin{tikzpicture}[every node/.style={rectangle,fill=cyan!30,rounded corners}]
+% 		\node (GMS) {Goldstein, Miranville, Schimperna (2011) \cite{GoldsteinMiranvilleSchimperna2011}};
+% 		\node[above right=of GMS] (CF) {Colli, Fukao (2015) \cite{ColliFukao2015NA};
+% 	\node[above left=of CF] (CGS) {Colli, Gilardi, Sprekels (2018) \cite{ColliGilardiSprekels2018}};
 
-    \foreach \u / \v in {CF/GMS, CGS/CF, CGS/GMS}
-        \draw[->] (\u) -- (\v);
-\end{tikzpicture}
+% 		\foreach \u / \v in {CF/GMS, CGS/CF, CGS/GMS}
+% 				\draw[->] (\u) -- (\v);
+% \end{tikzpicture}
 
 \subsubsection{境界で Allen--Cahn 方程式を満たす動的境界条件}
 \begin{itemize}
@@ -70,7 +70,7 @@
 
 \begin{tikzpicture}[every node/.style={rectangle,fill=cyan!30,rounded corners}]
 \node (S) {Scarpa (2019) \cite{Scarpa2019}};
-\node[right=of S] (CF) {Colli Fukao (2015) \cite{ColliFukao2015-CH-AC}};
+\node[right=of S] (CF) {Colli Fukao (2015) \cite{ColliFukao2015JMAA}};
 \node[below right=of S] (b) {b};
 \node[right=1.5cm of CF] (c) {c};
 \node[right=1.5cm of b] (d) {d};
@@ -174,7 +174,7 @@ P. Colli and T. Fukao, “Equation and dynamic boundary condition of Cahn-Hillia
 
 {\bf 先行結果}：
 \begin{itemize}
-	\item Colli, Fukao (2014) \cite{ColliFukao2014} 内部でAllen--Cahn, 境界でAllen--Cahn方程式をみたす動的境界問題, 本論文と同様の手法を用いているので参考になる.
+	\item Colli, Fukao (2014) \cite{ColliFukao2015MMAS} 内部でAllen--Cahn, 境界でAllen--Cahn方程式をみたす動的境界問題, 本論文と同様の手法を用いているので参考になる.
 \end{itemize}
 
 {\bf 新規性}：
@@ -314,7 +314,7 @@ $\alpha$は非線形関数であり, ここでは非線形の粘性を考える.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Colli Fukao (2015) \cite{ColliFukao2015-CH-AC} note:null day:2019.10.08}
+\subsection{Colli Fukao (2015) \cite{ColliFukao2015JMAA} note:null day:2019.10.08}
 {\bf 論文情報}：
 Pierluigi Colli, and Takeshi Fukao. "Cahn–Hilliard equation with dynamic boundary conditions and mass constraint on the boundary." Journal of Mathematical Analysis and Applications 429.2 (2015): 1190-1213.
 
@@ -418,7 +418,7 @@ Pierluigi Colli, and Takeshi Fukao. "Cahn–Hilliard equation with dynamic bound
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\subsection{Colli, Hassan Farshbaf-Shaker, Gilardi, Sprekels (2015) \cite{ColliFGS2015} note:null day:2019.10.10}
+\subsection{Colli, Hassan Farshbaf-Shaker, Gilardi, Sprekels (2015) \cite{ColliFarshbaf-ShakerGilardiSprekels2015} note:null day:2019.10.10}
 {\bf 論文情報}：
 P. Colli, M. Hassan Farshbaf-Shaker, G. Gilardi, J. Sprekels, "Optimal Boundary Control of a Viscous Cahn--Hilliard System with Dynamic Boundary Condition and Double Obstacle Potentials." SIAM Journal on Control and Optimization 53.4 (2015): 2696-2721. doi:10.1007/s00245-015-9299-z.
 
@@ -486,7 +486,7 @@ Tracking typeコスト汎関数:
 
 \subsection{Colli, Gilardi, Sprekels (2014) \cite{ColliGilardiSprekels2014} note:null day:2019.10.14}
 	\subsubsection{論文情報}
-	Pierluigi Colli, Gianni Gilardi, and J\"urgen Sprekels. "On the Cahn--Hilliard equation with dynamic boundary conditions and a dominating boundary potential." Journal of Mathematical Analysis and Applications 419.2 (2014): 972--994.	
+	Pierluigi Colli, Gianni Gilardi, and J\"urgen Sprekels. "On the Cahn--Hilliard equation with dynamic boundary conditions and a dominating boundary potential." Journal of Mathematical Analysis and Applications 419.2 (2014): 972--994.		
 	% 著者名, 論文タイトル, 掲載雑誌, 年, ページ.
 	\subsubsection{何に関する論文で何を示したのか}
 	内部ではviscous Cahn--Hilliard方程式又はpure Cahn--Hilliard方程式をみたし，境界ではAllen--Cahn方程式をみたす次の動的境界条件下の初期値問題の解の適切性を示した．
@@ -537,14 +537,18 @@ Tracking typeコスト汎関数:
 		\item[(A6)] (空間平均) $m_0:=(y_0)_{\Omega}$は$D(\beta\sG)$のinteriorに属す.
 	\end{itemize}
 	示した主定理は次の通り
-	{\bf Theorem 2.2}.
-	条件(A1)-(A5)をみたすとき, 初期値$y_{0,1},y_{0,2}\in V$に対する開は初期値と外力項に関して連続依存性を持つ．\\
-	{\bf Theorem 2.3}.
-	条件(A1)-(A7)をみたすとき, $y_0\in \mathcal{V}, \hat{\beta}(y_0)\in \Lone$ and $\hat{\beta}\sG(y_0|\sG)\in L^1(\Gamma)$なる初期値に対して弱開が存在する．\\
-	{\bf Theorem 2.4} and {\bf Theorem 2.6}.
+	{\bf Theorem 2.2}.（解の一意性と初期値に対する連続依存性）
+	条件(A1)-(A5)をみたすとき, 初期値$y_{0,1},y_{0,2}\in V$に対する解は初期値と外力項に関して連続依存性を持つ．\\
+	{\bf Theorem 2.3}.（解の存在）
+	条件(A1)-(A7)をみたすとき, $y_0\in \mathcal{V}, \hat{\beta}(y_0)\in \Lone$ and $\hat{\beta}\sG(y_0|\sG)\in L^1(\Gamma)$なる初期値に対して弱解が存在する．\\
+	{\bf Theorem 2.4} and {\bf Theorem 2.6}.（解の正則性の向上）
 	付帯条件を更に付けて正則性の向上を図る．
 	\subsubsection{どのような手法で示したのか}
-	Calatroni, Colli (2013) \cite{CalatroniColli2013} がAllen--Cahn方程式の動的境界問題で用いた手法に従う．
+	Calatroni, Colli (2013) \cite{CalatroniColli2013} がAllen--Cahn方程式の動的境界問題で用いた手法に従う．\\
+	Theorem 2.2 の証明はGilardi, Miranville, Schimperna (2009) \cite{GilardiMiranvilleSchimperna2009} のTheorem 1 とほとんど同じ．\\
+	Theorem 2.3 の証明は非線形項の単調項を吉田近似で近似した問題についての解の存在と一意性から示す．近似問題の解の一意性はTheorem 2.2 と同様で，解の存在はGilardi, Miranville, Schimperna (2009) \cite{GilardiMiranvilleSchimperna2009} Theorem 3 の証明を少し変更することで示せる．
+	近似問題の解について近似パラメタに依存しないアプリオリ評価を導出して極限移行により元の問題の解に漸近させる．
+	
 	\subsubsection{今後の展望や課題}
 	この結果をCahn--Hilliard方程式の動的境界問題の最適制御問題に利用することができる．但しAllen--Cahn方程式の動的境界問題の最適制御問題はすでにColli, Sprekels (2015) \cite{ColliSprekels2015} によって研究されている．
 	\subsubsection{この論文が引用している主要な先行研究}

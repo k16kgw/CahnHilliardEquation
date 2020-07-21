@@ -3,26 +3,23 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: DynamicBC.aux
 The style file: jplain.bst
 Database file #1: references.bib
-Repeated entry---line 1248 of file references.bib
+Repeated entry---line 1231 of file references.bib
  : @article{ColliGilardiSprekels2018
  :                                  ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "ColliFukao2015-CH-AC"
-Warning--I didn't find a database entry for "ColliFGS2015"
 Warning--I didn't find a database entry for "MiranvilleZelik2009"
 Warning--I didn't find a database entry for "MiranvilleZelik2005"
 Warning--I didn't find a database entry for "RackeZheng2003"
 Warning--I didn't find a database entry for "ColliFukaoWu2020"
 Warning--I didn't find a database entry for "LiuWu2019"
-Warning--I didn't find a database entry for "ColliFukao2015-GMS"
 Warning--I didn't find a database entry for "GarckeKnopf2018"
 Warning--I didn't find a database entry for "Wu2018"
 Warning--I didn't find a database entry for "KnopfLam2019"
-Warning--I didn't find a database entry for "ColliFukao2014"
 Warning--I didn't find a database entry for "Cahn1961"
 Warning--I didn't find a database entry for "CahnHilliard1958"
 Warning--I didn't find a database entry for "NovickCohen2008"
 Warning--I didn't find a database entry for "Aiki1993"
+Warning--I didn't find a database entry for "ColliFukao2015"
 Warning--I didn't find a database entry for "KenmochiNiezgodka1996)"
 Warning--I didn't find a database entry for "Kubo2012"
 Warning--I didn't find a database entry for "ColliFS2015"
@@ -52,46 +49,46 @@ Warning--can't use both volume and number fields in ColliGilardiSprekels2018
 Warning--there's a number but no volume in FukaoKenmochi2013
 Warning--can't use both volume and number fields in GrasselliSchimpernaSegattiZelik2009
 Warning--empty publisher in GrasselliSchimpernaSegattiZelik2009
-You've used 21 entries,
+You've used 23 entries,
             2620 wiz_defined-function locations,
-            834 strings with 10316 characters,
-and the built_in function-call counts, 9943 in all, are:
-= -- 903
-> -- 307
-< -- 51
-+ -- 127
-- -- 106
-* -- 621
-:= -- 1302
-add.period$ -- 63
-call.type$ -- 21
-change.case$ -- 114
+            838 strings with 10666 characters,
+and the built_in function-call counts, 11140 in all, are:
+= -- 1018
+> -- 341
+< -- 58
++ -- 141
+- -- 118
+* -- 701
+:= -- 1447
+add.period$ -- 69
+call.type$ -- 23
+change.case$ -- 126
 chr.to.int$ -- 0
-cite$ -- 25
-duplicate$ -- 536
-empty$ -- 791
-format.name$ -- 159
-if$ -- 2303
+cite$ -- 27
+duplicate$ -- 599
+empty$ -- 883
+format.name$ -- 177
+if$ -- 2586
 int.to.chr$ -- 0
-int.to.str$ -- 21
-missing$ -- 23
-newline$ -- 108
-num.names$ -- 42
-pop$ -- 148
+int.to.str$ -- 23
+missing$ -- 25
+newline$ -- 118
+num.names$ -- 46
+pop$ -- 162
 preamble$ -- 1
-purify$ -- 95
+purify$ -- 105
 quote$ -- 0
-skip$ -- 526
+skip$ -- 591
 stack$ -- 0
-substring$ -- 617
-swap$ -- 202
-text.length$ -- 51
+substring$ -- 715
+swap$ -- 233
+text.length$ -- 58
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
+type$ -- 88
 warning$ -- 4
-while$ -- 93
-width$ -- 23
-write$ -- 230
-is.kanji.str$ -- 250
+while$ -- 103
+width$ -- 25
+write$ -- 252
+is.kanji.str$ -- 277
 (There was 1 error message)
