@@ -536,7 +536,7 @@ Tracking typeコスト汎関数:
 		% \end{align}
 		\item[(A6)] (空間平均) $m_0:=(y_0)_{\Omega}$は$D(\beta\sG)$のinteriorに属す.
 	\end{itemize}
-	示した主定理は次の通り
+	示した主定理は次の通り\\
 	{\bf Theorem 2.2}.（解の一意性と初期値に対する連続依存性）
 	条件(A1)-(A5)をみたすとき, 初期値$y_{0,1},y_{0,2}\in V$に対する解は初期値と外力項に関して連続依存性を持つ．\\
 	{\bf Theorem 2.3}.（解の存在）
@@ -544,7 +544,7 @@ Tracking typeコスト汎関数:
 	{\bf Theorem 2.4} and {\bf Theorem 2.6}.（解の正則性の向上）
 	付帯条件を更に付けて正則性の向上を図る．
 	\subsubsection{どのような手法で示したのか}
-	Calatroni, Colli (2013) \cite{CalatroniColli2013} がAllen--Cahn方程式の動的境界問題で用いた手法に従う．\\
+	Calatroni, Colli (2013) \cite{CalatroniColli2013} がAllen--Cahn方程式の動的境界問題で用いた手法に従う．\par
 	Theorem 2.2 の証明はGilardi, Miranville, Schimperna (2009) \cite{GilardiMiranvilleSchimperna2009} のTheorem 1 とほとんど同じ．\\
 	Theorem 2.3 の証明は非線形項の単調項を吉田近似で近似した問題についての解の存在と一意性から示す．近似問題の解の一意性はTheorem 2.2 と同様で，解の存在はGilardi, Miranville, Schimperna (2009) \cite{GilardiMiranvilleSchimperna2009} Theorem 3 の証明を少し変更することで示せる．
 	近似問題の解について近似パラメタに依存しないアプリオリ評価を導出して極限移行により元の問題の解に漸近させる．
@@ -559,13 +559,40 @@ Tracking typeコスト汎関数:
 	\subsubsection{この論文を引用している論文}
 
 
-{\bf 戦略}：
+\newpage
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+\subsection{Gilardi, Miranville, Schimperna (2009) \cite{GilardiMiranvilleSchimperna2009} day:2020.07.21}
+	\subsubsection{論文情報}
+	Gilardi, Gianni, Alain Miranville, and Giulio Schimperna. "On the Cahn-Hilliard equation with irregular potentials and dynamic boundary conditions." Communications on Pure \& Applied Analysis 8.3 (2009): 881.
+	% 著者名, 論文タイトル, 掲載雑誌, 年, ページ.
+	\subsubsection{何に関する論文で何を示したのか}
+	次の内部でCahn--Hilliard方程式をみたし，境界でAllen--Cahn方程式をみたす動的境界条件下での初期値問題の解の存在と一意性を示す．
+	\begin{equation}
+		\begin{array}{l}
+		\partial_{t} u-\Delta w=0 \quad \text { in } \Omega \\
+		\partial_{n} w=0 \quad \text { on } \Gamma \\
+		w=\tau \partial_{t} u-\Delta u+\beta(u)+\pi(u)-f \quad \text { in } \Omega \\
+		v=\left.u\right|_{\Gamma} \quad \text { and } \quad \partial_{t} v+\left.\left(\partial_{n} u\right)\right|_{\Gamma}-\nu \Delta_{\Gamma} v+\beta_{\Gamma}(v)+\pi_{\Gamma}(v)=f_{\Gamma} \quad \text { on } \Gamma \\
+		u(0)=u_{0} \quad \text { in } \Omega
+		\end{array}
+	\end{equation}
+	\subsubsection{先行研究と比べてスゴイこと}
+	標準的でない非線形項を扱っている．特に$\pi, \pi\sG$はリプシッツ連続であり，$\beta, \beta\sG$は凸関数の劣微分である．
+	この設定は従来のCahn--Hilliard方程式で従来の境界条件（Neumann）でKenmochi, Niezg\'odka, Pawlow (1995) \cite{KenmochiNiezgodkaPawlow1995} によって調べられている．
+	\subsubsection{論文の核となるモノ}
+	\subsubsection{どのような手法で示したのか}
+	\subsubsection{今後の展望や課題}
+	\subsubsection{この論文が引用している主要な先行研究}
+	\subsubsection{この論文を引用している論文}
+	
 
 
 \newpage
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
 
 \subsection{Miranville, Zelik (2009) \cite{MiranvilleZelik2009} note:null day:2019.10.15}
 {\bf 論文情報}：
