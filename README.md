@@ -1,3 +1,5 @@
+※本リポジトリの更新は終了しました．今後論文を読んだ記録はScrapboxのプライベートプロジェクトで行います．
+
 # CahnHilliardEquation
 Cahn-Hilliard方程式に関連する論文を読んだ記録
 
